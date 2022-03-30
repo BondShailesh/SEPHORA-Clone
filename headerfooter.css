@@ -4,47 +4,77 @@
  }
  #container{
   width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: rgb(243,243,243);
  display: flex;
+ justify-content: space-evenly;
+ align-items: center;
  }
- img{
-    margin-left: 150px;
-}
- i{
-     
-     color: brown;
-     color: rgb(241,107,104);
-     font-size: 19px;
+
+ #leftcontainer{
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
  }
- #line{
-     margin: auto 20px;
-     font-weight: bold;
+
+ #centercontainer{
+     display: flex;
+     justify-content: space-evenly;
  }
- #fontaws{
-     margin: auto 5px;
+
+ #rightcontainer{
+     display: flex;
+     justify-content: space-evenly;
  }
- #storelocator{
-  margin: auto 8px;
- }
-#checkoutText{
-    display: inline-block;
-    
+
+p{
+    padding: 15px;
 }
-#fontstar1,#fontstar2{
-   display: inline-block;
+
+#leftcontainer>div>i,#rightcontainer>i{
+    margin-top: 15px;
+    color: rgb(241,107,104);
 }
-#fontstar1{
-   margin: 14px 15px auto 111px;
+
+#centercontainer>.starcolor1{
+    color: rgb(241,107,104);
 }
-#fontstar2{
-    margin: 14px 111px auto 15px;
-}
-#rightIcon{
-    display: inline-block;
-}
-#flex{
+
+.fontstar2{
     display: flex;
-    justify-content: space-evenly;
-    width: 456px;
+    align-items: center;
 }
+
+.fontstar2>:nth-child(1){
+    color: rgb(112,66,129);
+    margin: 3px;
+}
+
+.fontstar2>:nth-child(2){
+     color: rgb(251,192,0);
+     margin: 3px;
+}
+
+.fontstar2>:nth-child(3){
+    color: rgb(236,20,140);
+    margin: 3px;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+  }
+  .dark-blue-text {
+    color: #0A38F5;
+  }
+  .dark-pink-text {
+    color: #AC003A;
+  }
+  .dark-amber-text {
+    color: #ff6f00;
+  }
+  .dark-teal-text {
+    color: #004d40;
+  }
