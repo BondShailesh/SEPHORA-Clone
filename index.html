@@ -9,13 +9,30 @@
     <link rel="stylesheet" href="headerfooter.css">
     <script src="https://kit.fontawesome.com/37cdf01d4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+     <link rel="stylesheet" href="hamber/index.css">
+     <link rel="stylesheet" href="hover/hover.css">
 </head>
 
 <body>
     <header id="header">
         <div id="container">
             <div id="leftcontainer">
+              <!-- hamberger start -->
+              <div id="navigation">
+                <div id="menu" onclick="onClickMenu()">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+                </div>
+                <ul class="nav" id="nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Gallary</a></li>
+                  <li><a href="#">Kuch V</a></li>
+                </ul>
+              </div>
+              <!-- hamberger done -->
                 <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
                     alt="">
                 <p id="line">|</p>
@@ -38,7 +55,7 @@
                     <span class="starcolor1" > <i class="fa-solid fa-star"></i></span>
                 </div>
             </div>
-
+             <!-- Right inside container -->
             <div id="rightcontainer">
                     <i class="fa fa-caret-square-o-down" style="font-size:24px "></i>
                    <p>Get APP</p>
@@ -49,46 +66,121 @@
                     <i class="fa-solid fa-martini-glass"></i>
                     <p> Loyalty</p>
             </div>
+          </div>    
+         <!-- Top container Done -->
+        
+         <!-- middle Container -->
+         <div id="middlecontainer">
+           <div>
+             <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder=" Search SAPHORA">
+              <hr>
+             </div>
+           </div>
+
+           <div>
+             <p>SEPHORA </p>
+            </div>
+           <div>
+            <i class="fa-solid fa-heart"></i>
+            <p>|</p>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>|</p>
+            <i class="fa-solid fa-user-plus"></i>
+            <p>log in</p>
+           </div>
+         </div>
+         <!-- Bottom Header container -->
+        <div id="headerbottomcontainer"> 
+
+          <div class="dropdown">
+            <button class="dropbtn">SALE</button>
+            <div class="dropdown-content">
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">MAKEUP</button>
+            <div class="dropdown-content">
+              <div id="linebox">
+                <div id="makeupdropdownbox">     
+              <a href="#"><h3>Face</h3></a>
+              <a href="#"><p>Foundation</p></a>
+              <a href="#"><p>BB & CC Cream</p></a>
+              <a href="#"><p>Concealer</p></a>
+              <a href="#"><p>Face Primer</p></a>
+              <a href="#"><p>Highlighter</p></a>
+              <a href="#"><p>Face Brushes</p></a>
+              <a href="#"><p>Makeup Palette</p></a>
+
+              </div>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+            </div>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">SKINCARE</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">FRAGRANCE</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">HAIRCARE</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">TOOL & BRUSHES</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">BRANDS</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div> 
 
 
         </div>
+       <!-- buttondone -->
     </header>
-
-    <!--Navbar-->
-<nav class="navbar navbar-light light-blue lighten-4">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-  
-    <!-- Collapse button -->
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-          class="fas fa-bars fa-1x"></i></span></button>
-  
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-  
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-      <!-- Links -->
-  
-    </div>
-    <!-- Collapsible content -->
-  
-  </nav>
-  <!--/.Navbar-->
-  
-    </div>
 </body>
 
 </html>
+<script src="hamber/index.js"></script>
