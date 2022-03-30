@@ -1,14 +1,73 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      #container{
+         height: auto;
+         width: auto;
+         border: 2px solid red;
+         display: flex;
+      }
+      #container>div{
+         border: 2px solid rebeccapurple;
+         height: auto;
+         width: auto;
+         /* margin: auto; */
+      }
+
+      /* shop list style  */
+      .list{
+         list-style-type: none;
+         font-weight: 400;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: -45;
+      }
+      .list>li{
+         display: list-item;
+         padding: 6px;
+      }
+      .list>li>a{
+         cursor: pointer;
+         text-decoration: none;
+         color: black;
+         font-size: 18px;
+      }
+      .left-div-shop{
+         margin-top: 16px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 18px;
+         display: block;
+      }
+
+   </style>
 </head>
 <body>
-    <h1>Manish</h1>
-    
-    </div>
+   <div id="container">
+      <div id="left-side-div">
+         <div class="left-div-shop"><b>SHOP</b></div>
+         <ul class="list">
+            <li> <a href="">MOSISTURIZERS</a></li>
+            <li><a href="">CLEANSERS</a></li>
+            <li><a href="">TREATMENT & HIGHTECH TOOLS </a></li>
+            <li><a href="">MASKS</a></li>
+            <li><a href="">BATH & SHOWER</a></li>
+            <li><a href="">BODY MOSISTURIZERS</a></li>
+            <li><a href="">VEGAN</a></li>
+         </ul>
+      </div>
+      <div id="rigth-side-div">
+         <div class="image-before-product-div"></div>
+         <div class="after-image-box">
+            <div class="left-btn"></div>
+            <div class="just-arrived-products"></div>
+            <div class="right-btn"></div>
+         </div>
+
+      </div>
+   </div>
 </body>
 </html>
