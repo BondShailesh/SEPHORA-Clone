@@ -1,5 +1,4 @@
-
-<html lang="en">
+ <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +25,12 @@
          font-family: Arial, Helvetica, sans-serif;
          margin-left: -45;
       }
+      .inside-list{
+         list-style-type: none;
+         font-weight: 400;
+         font-family: Arial, Helvetica, sans-serif;
+         margin-left: -12;
+      }
       .list>li{
          display: list-item;
          padding: 6px;
@@ -36,12 +41,31 @@
          color: black;
          font-size: 18px;
       }
-      .left-div-shop{
+      .left-div-shop{ 
          margin-top: 16px;
          font-family: Arial, Helvetica, sans-serif;
          font-size: 18px;
          display: block;
       }
+      .ancher{
+          cursor: pointer;
+         text-decoration: none;
+         color: black;
+      }
+
+      .just-arrived-products{
+         display: grid;
+         grid-template-columns: repeat(6,1fr);
+      }
+      .just-arrived-img{
+         width:150px;
+         height: 200px;
+      }
+
+
+/* dropdown */
+
+/* dropdown end */
 
    </style>
 </head>
@@ -49,14 +73,118 @@
    <div id="container">
       <div id="left-side-div">
          <div class="left-div-shop"><b>SHOP</b></div>
+
+         <button class="btn" onclick="dropDown()"> gdhg</button>
+         <div id="myDiv1">
+            <ul>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+            </ul>
+         </div>
+         <button class="btn" onclick="dropDown()"> gdhg</button>
+         <div id="myDiv2">
+            <ul>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+               <li><a href=""></a> kugukyfjh</li>
+            </ul>
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
          <ul class="list">
-            <li> <a href="">MOSISTURIZERS</a></li>
-            <li><a href="">CLEANSERS</a></li>
-            <li><a href="">TREATMENT & HIGHTECH TOOLS </a></li>
-            <li><a href="">MASKS</a></li>
-            <li><a href="">BATH & SHOWER</a></li>
-            <li><a href="">BODY MOSISTURIZERS</a></li>
-            <li><a href="">VEGAN</a></li>
+            <li> <a href="">MOSISTURIZERS</a>
+
+               <ul class="inside-list">
+                  <li><a class="ancher" href=""> Moisturizers</a></li>
+                  <li><a class="ancher" href=""> Night Creams</a></li>
+                  <li><a class="ancher" href="">Face Oils </a></li>
+                  <li><a class="ancher" href="">Mists & Essences </a></li>
+                  <li><a class="ancher" href=""> BB & CC Creams</a></li>
+                  <li><a class="ancher" href=""> Sunscreen</a></li>
+                  </ul> 
+            
+            
+            </li>
+            <li><a href="">CLEANSERS</a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Face Wash & Cleansers</a></li>
+                  <li><a class="ancher" href="">  Exfoliators</a></li>
+                  <li><a class="ancher" href="">Makeup Removers </a></li>
+                  <li><a class="ancher" href="">Face Wipes </a></li>
+                  <li><a class="ancher" href=""> Toners</a></li>
+                  <li><a class="ancher" href=""> Blotting Papers</a></li>
+                  <li><a class="ancher" href=""> Hand Sanitizers</a></li>
+                  </ul>
+            </li>
+            <li><a href="">TREATMENT & HIGHTECH TOOLS </a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Face Serums</a></li>
+                  <li><a class="ancher" href=""> Cleansing Tools</a></li>
+                  <li><a class="ancher" href="">Anti-Aging Tools </a></li>
+                  <li><a class="ancher" href="">Face Masks </a></li>
+                  <li><a class="ancher" href=""> Eye Cream & Treatments</a></li>
+                  </ul>
+            </li>
+            <li><a href="">MASKS</a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Face Masks</a></li>
+                  <li><a class="ancher" href="">Sheet Masks</a></li>
+                  <li><a class="ancher" href="">Eye Masks </a></li>
+                  <li><a class="ancher" href="">Nose Masks & Strips </a></li>
+                  <li><a class="ancher" href=""> Lip Masks</a></li>
+                  <li><a class="ancher" href=""> Hair Masks</a></li>
+                  <li><a class="ancher" href=""> Foot Masks</a></li>
+                  </ul>
+            </li>
+            <li><a href="">BATH & SHOWER</a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Moisturizers</a></li>
+                  <li><a class="ancher" href=""> Night Creams</a></li>
+                  <li><a class="ancher" href="">Face Oils </a></li>
+                  <li><a class="ancher" href="">Mists & Essences </a></li>
+                  <li><a class="ancher" href=""> BB & CC Creams</a></li>
+                  <li><a class="ancher" href=""> Sunscreen</a></li>
+                  </ul>
+            </li>
+            <li><a href="">BODY MOSISTURIZERS</a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Moisturizers</a></li>
+                  <li><a class="ancher" href=""> Night Creams</a></li>
+                  <li><a class="ancher" href="">Face Oils </a></li>
+                  <li><a class="ancher" href="">Mists & Essences </a></li>
+                  <li><a class="ancher" href=""> BB & CC Creams</a></li>
+                  <li><a class="ancher" href=""> Sunscreen</a></li>
+                  </ul>
+            </li>
+            <li><a href="">VEGAN</a>
+                  <ul class="inside-list">
+                  <li><a class="ancher" href=""> Moisturizers</a></li>
+                  <li><a class="ancher" href=""> Night Creams</a></li>
+                  <li><a class="ancher" href="">Face Oils </a></li>
+                  <li><a class="ancher" href="">Mists & Essences </a></li>
+                  <li><a class="ancher" href=""> BB & CC Creams</a></li>
+                  <li><a class="ancher" href=""> Sunscreen</a></li>
+                  </ul>
+            </li>
          </ul>
       </div>
       <div id="rigth-side-div">
@@ -71,3 +199,95 @@
    </div>
 </body>
 </html>
+<script>
+
+
+function dropDown() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+   var justArrived = [
+   {
+   image_url:"https://cdn06.nnnow.com/web-images/medium/styles/CE47TVIQ8DA/1542965062673/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Oil Control Blotting Paper",
+   price:"Rs. 1,200"
+   },
+   
+   { 
+   image_url:"https://cdn09.nnnow.com/web-images/medium/styles/LK8JYTR9UEY/1593684983302/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Waso Quick Gental Cleanser",
+   price:"Rs.2,200"
+   },
+   {
+   image_url:"https://cdn06.nnnow.com/web-images/medium/styles/CE47TVIQ8DA/1542965062673/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Oil Control Blotting Paper",
+   price:"Rs. 1,200"
+   },
+   
+   {  
+   image_url:"https://cdn09.nnnow.com/web-images/medium/styles/LK8JYTR9UEY/1593684983302/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Waso Quick Gental Cleanser",
+   price:"Rs.2,200"
+   },
+   {
+   image_url:"https://cdn06.nnnow.com/web-images/medium/styles/CE47TVIQ8DA/1542965062673/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Oil Control Blotting Paper",
+   price:"Rs. 1,200"
+   },
+   
+   {  
+   image_url:"https://cdn09.nnnow.com/web-images/medium/styles/LK8JYTR9UEY/1593684983302/1.jpg",
+   name:"SHISEIDO",
+   name_type:"Waso Quick Gental Cleanser",
+   price:"Rs.2,200"
+   }
+] 
+
+
+ justArrived.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.className += "just-arrived-img";
+
+    var name = document.createElement("h5");
+    name.textContent = elem.name;
+    var nameType = document.createElement("p");
+    nameType.textContent = elem.name_type;
+
+    var price = document.createElement("p");
+    price.innerText = elem.price;
+
+    
+    
+    box.append(img, name,nameType, price);
+    
+
+    document.querySelector(".just-arrived-products").append(box);
+  });
+
+   // function mosit(){
+   //    var x = document.getElementById("#mosis");
+      
+   //    if(x.style.display==="none"){
+   //       x.style.display="block";
+   //    }
+   //    else{
+   //       x.style.display = "none"
+   //    }
+
+   // }
+</script>
+
+
