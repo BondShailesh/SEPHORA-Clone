@@ -33,11 +33,11 @@
                 </ul>
               </div>
               <!-- hamberger done -->
-                <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
+                <img id="nnnow" src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
                     alt="">
                 <p id="line">|</p>
                 <div> 
-                <i class="fa-solid fa-location-dot" ></i>
+                <i id="iconlocator" class="fa-solid fa-location-dot" ></i>
                 </div>
                 <p id="storelocator">Store Locator</p>
             </div>
@@ -57,130 +57,563 @@
             </div>
              <!-- Right inside container -->
             <div id="rightcontainer">
-                    <i class="fa fa-caret-square-o-down" style="font-size:24px "></i>
-                   <p>Get APP</p>
+                    <i class="fa fa-caret-square-o-down getappicon" style="font-size:24px "></i>
+                   <p id="getapp">Get APP</p>
                    <p>|</p>
-                    <i class="fa-solid fa-people-carry-box"></i>
-                    <p>Track Order</p> 
+                    <i class="fa-solid fa-people-carry-box trackordericon"></i>
+                    <p id="trackorder">Track Order</p> 
                     <p>|</p>
-                    <i class="fa-solid fa-martini-glass"></i>
-                    <p> Loyalty</p>
+                    <i class="fa-solid fa-martini-glass loyaltyicon"></i>
+                    <p id="loyalty"> Loyalty</p>
             </div>
           </div>    
          <!-- Top container Done -->
         
-         <!-- middle Container -->
+         <!-- middle Container of top 3 container in navbar-->
          <div id="middlecontainer">
            <div>
              <div>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass search"></i>
               <input type="text" placeholder=" Search SAPHORA">
               <hr>
              </div>
            </div>
 
            <div>
-             <p>SEPHORA </p>
+             <p id="sephora">SEPHORA </p>
             </div>
            <div>
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart favourite"></i>
             <p>|</p>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bag-shopping bag"></i>
             <p>|</p>
-            <i class="fa-solid fa-user-plus"></i>
-            <p>log in</p>
+            <i class="fa-solid fa-user-plus loginicon"></i>
+            <p id="login">log in</p>
            </div>
          </div>
-         <!-- Bottom Header container -->
-        <div id="headerbottomcontainer"> 
 
+         <!-- Bottom of Header container -->
+         
+        <div id="headerbottomcontainer"> 
           <div class="dropdown">
             <button class="dropbtn">SALE</button>
             <div class="dropdown-content">
             </div>
           </div> 
-          
+          <!-- Makeup start -->
+
+
           <div class="dropdown">
             <button class="dropbtn">MAKEUP</button>
-            <div class="dropdown-content">
-              <div id="linebox">
-                <div id="makeupdropdownbox">     
-              <a href="#"><h3>Face</h3></a>
-              <a href="#"><p>Foundation</p></a>
-              <a href="#"><p>BB & CC Cream</p></a>
-              <a href="#"><p>Concealer</p></a>
-              <a href="#"><p>Face Primer</p></a>
-              <a href="#"><p>Highlighter</p></a>
-              <a href="#"><p>Face Brushes</p></a>
-              <a href="#"><p>Makeup Palette</p></a>
+            <div class="dropdown-content">   
+              <a href="#">
+                <div id="hoverboxfeature">
+                  <div class="top">
+                 <div>    
+                   <h3>Face</h3>
+                   <p>Foundation</p>
+                   <p>BB & CC Cream</p>
+                   <p>Concealer</p>
+                   <p>Face Primer</p>
+                   <p>Highlighter</p>
+                   <p>Face Brushes</p>
+                   <p>Makeup Palette</p>
+                  </div>
+                 <div>
+                   <h3>EYE</h3>
+                   <p>Eye Palettes</p>
+                   <p>Mascara</p>
+                   <p>Eyeliner</p>
+                   <p>Eyebrow</p>
+                   <p>Eyeshadow</p>
+                   <p>Eye Primer</p>
+                   <p>Eye Brushes</p>
+                   <p>Contact Lenses</p>
+                  </div>
+                 <div>
+                   <h3>LIP</h3>
+                   <p>Lipstick</p>
+                   <p>Lip Stain</p>
+                   <p>Lip Gloss</p>
+                   <p>Lip Liner</p>
+                   <p>Lip Balm & Treatment</p>
+                   <p>Lip Brushes</p>
+                  </div>
+                 <div>
+                   <h3>CHEEK</h3>
+                   <p>TREATMENTS</p>
+                   <p>Face Serum</p>
+                   <p>Cleansing Tools</p>
+                   <p>Eye Creams & Treatments</p>
+                  </div>
+                 <div>
+                   <h3>NAIL MAKEUP</h3>
+                   <p>NAIL MAKEUP</p>
+                   <p>Nail Polish</p>
+                   <p>Nail Care</p>
+                   <p>Manicure & Pedicure Tools</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div>
+                    <h3>MAKEUP ACCESSORIES</h3>
+                    <p>Tweezers & Eyebrow Tools</p>
+                    <p>Makeup Removers</p>
+                    <p>Sponges & Applicators</p>
+                    <p>Makeup Bags & Travel Cases</p>
+                  </div>
+                  <div>
+                    <h3>VEGAN</h3>
+                    <p>Eye</p>
+                    <p>Face</p>
+                  </div>
+                </div>
+                </div>
+              </a>
+            </div>
+          </div> 
+                        <!-- Makeup done -->
 
-              </div>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-            </div>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">SKINCARE</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">FRAGRANCE</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">HAIRCARE</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">TOOL & BRUSHES</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">BRANDS</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div> 
+           <!-- SKin care start -->
+                        <div class="dropdown">
+                          <button class="dropbtn">SKINCARE</button>
+                          <div class="dropdown-content">   
+                            <a href="#">
+                              <div id="hoverboxfeature">
+                                <div class="top">
+                               <div>    
+                                 <h3>MOISTURIZERS</h3>
+                                 <p>Moisturizers</p>
+                                 <p>Night Creams</p>
+                                 <p>Mists & Essences</p>
+                                 <p>BB & CC Creams</p>
+                                </div>
+                               <div>
+                                 <h3>CLEANSERS</h3>
+                                 <p>Face Wash & Cleansers</p>
+                                 <p>Makeup Removers</p>
+                                 <p>Face Wipes</p>
+                                 <p>Toners</p>
+                                 <p>Hand Sanitizers</p>
+                                </div>
+                               <div>
+                                 <h3>TREATMENTS & HIGH TECH TOOLS</h3>
+                                 <p>Face Serums</p>
+                                 <p>Cleansing Tools</p>
+                                </div>
+                               <div>
+                                 <h3>MASKS</h3>
+                                 <p>Face Masks</p>
+                                 <p>Sheet Masks</p>
+                                 <p>Eye Masks</p>
+                                 <p>Nose Masks</p>
+                                 <p>Lip Masks</p>
+                                 <p>Hair Masks</p>
+                                 <p>Hand Masks</p>
+                                 <p>Foot Masks</p>
+                                </div>
+                              </div>
+                              <div class="bottom">
+                                <div>
+                                  <h3>BATH & SHOWER</h3>
+                                  <p>Body Wash and Shower Gel</p>
+                                   <p>Scrub and Exfoliants</p>
+                                   <p>Exfoliators</p>
+                                </div>
+                                <div>
+                                  <h3>BODY MOISTURIZERS</h3>
+                                  <p>Body Lotions & Body Oils</p>
+                                  <p>Hand Cream & Foot Cream</p>
+                                </div>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div> 
 
+                        <!-- skincare Done -->
+                            <!-- fragnance start -->
+                        <div class="dropdown">
+                          <button class="dropbtn">FRAGRANCE</button>
+                          <div class="dropdown-content">   
+                            <a href="#">
+                              <div id="hoverboxfeature">
+                                <div id="top">
+                               <div>    
+                                 <h3>Face</h3>
+                                 <p>Foundation</p>
+                                 <p>BB & CC Cream</p>
+                                 <p>Concealer</p>
+                                 <p>Face Primer</p>
+                                 <p>Highlighter</p>
+                                 <p>Face Brushes</p>
+                                 <p>Makeup Palette</p>
+                                </div>
+                               <div>
+                                 <h3>EYE</h3>
+                                 <p>Eye Palettes</p>
+                                 <p>Mascara</p>
+                                 <p>Eyeliner</p>
+                                 <p>Eyebrow</p>
+                                 <p>Eyeshadow</p>
+                                 <p>Eye Primer</p>
+                                 <p>Eye Brushes</p>
+                                 <p>Contact Lenses</p>
+                                </div>
+                               <div>
+                                 <h3>LIP</h3>
+                                 <p>Lipstick</p>
+                                 <p>Lip Stain</p>
+                                 <p>Lip Gloss</p>
+                                 <p>Lip Liner</p>
+                                 <p>Lip Balm & Treatment</p>
+                                 <p>Lip Brushes</p>
+                                </div>
+                               <div>
+                                 <h3>CHEEK</h3>
+                                 <p>TREATMENTS</p>
+                                 <p>Face Serum</p>
+                                 <p>Cleansing Tools</p>
+                                 <p>Eye Creams & Treatments</p>
+                                </div>
+                               <div>
+                                 <h3>NAIL MAKEUP</h3>
+                                 <p>NAIL MAKEUP</p>
+                                 <p>Nail Polish</p>
+                                 <p>Nail Care</p>
+                                 <p>Manicure & Pedicure Tools</p>
+                                </div>
+                              </div>
+                              <div id="bottom">
+                                <div>
+                                  <h3>MAKEUP ACCESSORIES</h3>
+                                  <p>Tweezers & Eyebrow Tools</p>
+                                  <p>Makeup Removers</p>
+                                  <p>Sponges & Applicators</p>
+                                  <p>Makeup Bags & Travel Cases</p>
+                                </div>
+                                <div>
+                                  <h3>VEGAN</h3>
+                                  <p>Eye</p>
+                                  <p>Face</p>
+                                </div>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div> 
+
+                        <!-- Fragance Done -->
+                            <!-- HAIR CARE START -->
+                        <div class="dropdown">
+                          <button class="dropbtn">HAIRCERE</button>
+                          <div class="dropdown-content">   
+                            <a href="#">
+                              <div id="hoverboxfeature">
+                                <div id="top">
+                               <div>    
+                                 <h3>Face</h3>
+                                 <p>Foundation</p>
+                                 <p>BB & CC Cream</p>
+                                 <p>Concealer</p>
+                                 <p>Face Primer</p>
+                                 <p>Highlighter</p>
+                                 <p>Face Brushes</p>
+                                 <p>Makeup Palette</p>
+                                </div>
+                               <div>
+                                 <h3>EYE</h3>
+                                 <p>Eye Palettes</p>
+                                 <p>Mascara</p>
+                                 <p>Eyeliner</p>
+                                 <p>Eyebrow</p>
+                                 <p>Eyeshadow</p>
+                                 <p>Eye Primer</p>
+                                 <p>Eye Brushes</p>
+                                 <p>Contact Lenses</p>
+                                </div>
+                               <div>
+                                 <h3>LIP</h3>
+                                 <p>Lipstick</p>
+                                 <p>Lip Stain</p>
+                                 <p>Lip Gloss</p>
+                                 <p>Lip Liner</p>
+                                 <p>Lip Balm & Treatment</p>
+                                 <p>Lip Brushes</p>
+                                </div>
+                               <div>
+                                 <h3>CHEEK</h3>
+                                 <p>TREATMENTS</p>
+                                 <p>Face Serum</p>
+                                 <p>Cleansing Tools</p>
+                                 <p>Eye Creams & Treatments</p>
+                                </div>
+                               <div>
+                                 <h3>NAIL MAKEUP</h3>
+                                 <p>NAIL MAKEUP</p>
+                                 <p>Nail Polish</p>
+                                 <p>Nail Care</p>
+                                 <p>Manicure & Pedicure Tools</p>
+                                </div>
+                              </div>
+                              <div id="bottom">
+                                <div>
+                                  <h3>MAKEUP ACCESSORIES</h3>
+                                  <p>Tweezers & Eyebrow Tools</p>
+                                  <p>Makeup Removers</p>
+                                  <p>Sponges & Applicators</p>
+                                  <p>Makeup Bags & Travel Cases</p>
+                                </div>
+                                <div>
+                                  <h3>VEGAN</h3>
+                                  <p>Eye</p>
+                                  <p>Face</p>
+                                </div>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div> 
+
+                        <!-- Hair care Done  -->
+                        <!-- TOOLS AND BRUSHES START -->
+                        <div class="dropdown">
+                          <button class="dropbtn">TOOLS AND BRUSHES</button>
+                          <div class="dropdown-content">   
+                            <a href="#">
+                              <div id="hoverboxfeature">
+                                <div id="top">
+                               <div>    
+                                 <h3>Face</h3>
+                                 <p>Foundation</p>
+                                 <p>BB & CC Cream</p>
+                                 <p>Concealer</p>
+                                 <p>Face Primer</p>
+                                 <p>Highlighter</p>
+                                 <p>Face Brushes</p>
+                                 <p>Makeup Palette</p>
+                                </div>
+                               <div>
+                                 <h3>EYE</h3>
+                                 <p>Eye Palettes</p>
+                                 <p>Mascara</p>
+                                 <p>Eyeliner</p>
+                                 <p>Eyebrow</p>
+                                 <p>Eyeshadow</p>
+                                 <p>Eye Primer</p>
+                                 <p>Eye Brushes</p>
+                                 <p>Contact Lenses</p>
+                                </div>
+                               <div>
+                                 <h3>LIP</h3>
+                                 <p>Lipstick</p>
+                                 <p>Lip Stain</p>
+                                 <p>Lip Gloss</p>
+                                 <p>Lip Liner</p>
+                                 <p>Lip Balm & Treatment</p>
+                                 <p>Lip Brushes</p>
+                                </div>
+                               <div>
+                                 <h3>CHEEK</h3>
+                                 <p>TREATMENTS</p>
+                                 <p>Face Serum</p>
+                                 <p>Cleansing Tools</p>
+                                 <p>Eye Creams & Treatments</p>
+                                </div>
+                               <div>
+                                 <h3>NAIL MAKEUP</h3>
+                                 <p>NAIL MAKEUP</p>
+                                 <p>Nail Polish</p>
+                                 <p>Nail Care</p>
+                                 <p>Manicure & Pedicure Tools</p>
+                                </div>
+                              </div>
+                              <div id="bottom">
+                                <div>
+                                  <h3>MAKEUP ACCESSORIES</h3>
+                                  <p>Tweezers & Eyebrow Tools</p>
+                                  <p>Makeup Removers</p>
+                                  <p>Sponges & Applicators</p>
+                                  <p>Makeup Bags & Travel Cases</p>
+                                </div>
+                                <div>
+                                  <h3>VEGAN</h3>
+                                  <p>Eye</p>
+                                  <p>Face</p>
+                                </div>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div> 
+
+                        <!-- Tool and brsh done -->
+                         <!-- BRANDS START -->
+                        <div class="dropdown">
+                          <button class="dropbtn">BRANDS</button>
+                          <div class="dropdown-content">   
+                            <a href="#">
+                              <div id="hoverboxfeature">
+                                <div id="top">
+                               <div>    
+                                 <h3>Face</h3>
+                                 <p>Foundation</p>
+                                 <p>BB & CC Cream</p>
+                                 <p>Concealer</p>
+                                 <p>Face Primer</p>
+                                 <p>Highlighter</p>
+                                 <p>Face Brushes</p>
+                                 <p>Makeup Palette</p>
+                                </div>
+                               <div>
+                                 <h3>EYE</h3>
+                                 <p>Eye Palettes</p>
+                                 <p>Mascara</p>
+                                 <p>Eyeliner</p>
+                                 <p>Eyebrow</p>
+                                 <p>Eyeshadow</p>
+                                 <p>Eye Primer</p>
+                                 <p>Eye Brushes</p>
+                                 <p>Contact Lenses</p>
+                                </div>
+                               <div>
+                                 <h3>LIP</h3>
+                                 <p>Lipstick</p>
+                                 <p>Lip Stain</p>
+                                 <p>Lip Gloss</p>
+                                 <p>Lip Liner</p>
+                                 <p>Lip Balm & Treatment</p>
+                                 <p>Lip Brushes</p>
+                                </div>
+                               <div>
+                                 <h3>CHEEK</h3>
+                                 <p>TREATMENTS</p>
+                                 <p>Face Serum</p>
+                                 <p>Cleansing Tools</p>
+                                 <p>Eye Creams & Treatments</p>
+                                </div>
+                               <div>
+                                 <h3>NAIL MAKEUP</h3>
+                                 <p>NAIL MAKEUP</p>
+                                 <p>Nail Polish</p>
+                                 <p>Nail Care</p>
+                                 <p>Manicure & Pedicure Tools</p>
+                                </div>
+                              </div>
+                              <div id="bottom">
+                                <div>
+                                  <h3>MAKEUP ACCESSORIES</h3>
+                                  <p>Tweezers & Eyebrow Tools</p>
+                                  <p>Makeup Removers</p>
+                                  <p>Sponges & Applicators</p>
+                                  <p>Makeup Bags & Travel Cases</p>
+                                </div>
+                                <div>
+                                  <h3>VEGAN</h3>
+                                  <p>Eye</p>
+                                  <p>Face</p>
+                                </div>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div> 
+         
+                   <!--  Brands Done-->
 
         </div>
        <!-- buttondone -->
     </header>
+    <!-- Header part is done -->
+
+    <div id="mainbodypart" ></div>
+    <!-- bottom part 1st start -->
+    <footer>
+      <div id="bottomfirstcontainer">
+        <div id="topbottomnews"> 
+        <h2 id="topbottomnewstext">GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION</h2>
+      </div>
+        <div id="email"> 
+        <input id="subscribeinput" type="text" placeholder="Enter your email address">
+        <button id="subscribebutton">SUBSCRIBE</button>
+       </div>
+      </div>
+    <!-- bottom part 1st Done -->
+    <!-- bottom 2nd part start -->
+    <div id="bottomsecontcontainer">
+    <div class="sephorabox">
+      <p class="headersaphora">Sephora online India is a trailblazer in the Indian beauty scene</p>
+      <p>A leader in luxury beauty and skincare, our purpose at Sephora online India is to create an inviting online beauty shopping experience and inspire fearlessness in our community. Since the Sephora India launch in 2013, we have been an industry-leading champion of diversity, and empowerment, guided by our longstanding company values.</p>
+    </div>
+    <div class="sephorabox">
+      <p class="headersaphora">Discover who we are and what we entail only on NNNOW.com</p>
+      <p>nOwned by LVMH Moet Hennessy Louis Vuitton, the world's leading luxury goods group, Sephora was founded in France by Dominique Mandonnaud in 1970 and is defined by its unique, open-sell environment with an ever-increasing assortment of best-selling lipsticks, eyeliners, foundations, eye palettes and more from carefully curated brands such as Make Up For Ever, Estee Lauder, Benefit Cosmetics, Huda Beauty and many more.</p>
+    </div>
+    <div class="sephorabox">
+      <p class="headersaphora">Shop Our unrivalled range of Sephora products for a more beautiful you</p>
+    </div>
+
+      <div id="longtextatbottom">
+        <div> 
+        <p>\nOur array on Sephora NNNOW features trusted classics from Pixi, Elizabeth Arden, Anastasia Beverly Hills, Clinique, Tom Ford, and Sephora’s own, SEPHORA COLLECTION. Today, Sephora India online is a powerful beauty presence in the digital space, thanks to its unparalleled assortment of prestige products in every category, unbiased service from beauty experts, interactive shopping environment, and innovation.</p>
+        </div>
+        <p>Through some of our bestsellers such as Sephora lipsticks, Sephora foundations, and other Sephora products, we explore the universe of beauty and wellness with an unbiased approach to experiential retail. We also host expert tutorial videos from our top brands to help you nail the perfect smokey eye or winged eyeliner. Our team of experts in-store also works hard to assure you have a seamless shopping experience with us and helps you define your skin undertones while purchasing the right sephora foundation for you. Sephora continues to give back to communities and advance inclusion in the beauty industry by providing an unrivaled range of shades for Sephora foundations at unbeatable prices.</p>
+        <p>Sephora in India also encompasses a formidable range of skincare, bath and body products, haircare, fragrances and perfumes from international brands. Many of our brands such as Botanist and Forest Essentials boast of incorporating only natural ingredients in their products, whereas award-winning such as Natasha Denona, Nudestix, Kora Organics, Aveda, Olaplex, and more promise only SLS/Paraben-free formulas in their range of products. Be sure to also check out our range of cruelty-free brands that include best-selling brands such as Caudalie, Smashbox, Dear Dahlia, Juice Beauty and much more. Sephora online hosts the entire range of makeup and skin products available in Sephora stores in India. Buy Sephora online on NNNOW and be the first to be alerted when we have a major Sephora India sale event coming up!
+        </p>
+        <h5>Start your Sephora India online shopping on NNNOW.com</h5>
+        <p>Women can now shop their favorite luxury beauty brands on the Sephora site or via the NNNOW mobile app. Be spoilt for choice with a wide variety of makeup, skincare, haircare, bath and body and fragrances that you can shop from the comfort of your home. Discover online shopping that offers advantages such as Gift With Purchase, freebie sachets, and discount offers on beauty! Buy Sephora online at amazing deals and prices at the click of a button.</p>
+      </div>
+      <!-- Mid bottom is done -->
+      <!-- last bottom started -->
+        <div id="iconbottomdiv">
+          <div>
+            <h3>WHO WE ARE</h3>
+            <h3>FREQUENTLY ASKED QUESTIONS</h3>
+            <h3>CONTACT US</h3>
+          </div>
+          <div id="socialmediaicon">
+            <i class="fa-2x fa-brands fa-facebook-f"></i>
+            <i class="fa-2x fa-brands fa-instagram"></i>
+            <i class="fa-2x fa-brands fa-twitter"></i>
+            <i class="fa-2x fa-brands fa-youtube"></i>
+          </div>
+          <div>
+            <p>© 2022</p>
+            <p>|</p>
+            <p>NNNOWPrivacy</p>
+            <p>|</p>
+            <p>PolicyTerms & Conditions</p>
+          </div>
+        </div>
+        <!-- Icon bottom is done -->
+        <div id="extremebottom">
+          <div>
+            <h3>BRANDS</h3>
+            <p>Sephora Collection | Benefit Cosmetics | Make Up For Ever | Cover FX | Stila | Natio | Burt's Bees | Foreo | Smashbox | Glamglow | Clinique | Estee Lauder | Elizabeth Arden</p>
+            <p>Givenchy | Bobbi Brown | Shiseido | OPI | Forest Essentials | Percy & Reed | Boscia | Oscar | Blandi | Burberry | CK Fragrances | Kenzo | Tom Ford | Bvlgari | Carolina Herrera</p>
+            <p>Davidoff | Giorgio Armani | Montblanc | Paco Rabanne | Yves Saint Laurent | Azzaro | Nina Ricci | Roberto Cavalli | Zirh | Omorfee</p>
+          </div>
+          <div>
+            <h3>MAKEUP</h3>
+            <p>Face | Cheek | Eye | Lip | Nail | Makeup Palettes | Accessories</p>
+          </div>
+          <div>
+            <h3>SKIN CARE</h3>
+            <p>Moisturizers | Cleansers | Treatments | Masks | Eye Care | Sun Care | Lip Treatments</p>
+          </div>
+          <div>
+            <h3>OTHER CATEGORIES</h3>
+            <p>Fragrances | Tools & Brushes</p>
+          </div>
+          <div>
+            <h3>MY SEPHORA</h3>
+            <p>My orders | Store locator | Sephora Facebook | Sephora Instagram</p>
+          </div>
+        </div>
+    </footer>
+  <!-- Footer is done -->
 </body>
 
 </html>
 <script src="hamber/index.js"></script>
+<script src="index.js"></script>

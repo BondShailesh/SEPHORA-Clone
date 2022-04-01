@@ -1,7 +1,7 @@
 .dropbtn {
     background-color: white;
     color: black;
-    padding: 16px;
+    padding: 13px;
     font-size: 16px;
     border: none;
     font-weight: bold;
@@ -25,21 +25,53 @@
   
   .dropdown-content a {
     color: black;
-    padding: 5px 16px;
+    padding: 5px 6px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    width: auto;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #fff;}
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {display: flex;}
   
   .dropdown:hover .dropbtn {color: rgb(248,83,168);}
   #linkbox{
       display: flex;
   }
-  #makeupdropdownbox{
-      width: 300px;
-      height: auto;
-      display: flex;
+ 
+  .top{
+    display: flex;
+    height: auto;
+  }
+  .top>div{
+    width: 130px;
+    height: auto;
+    padding-right: 45px;
+    margin: 3px;
+  }
+  .bottom{
+    display: flex;
+    margin-top: 23px;
+  }
+  .bottom>div{
+    width: 130px;
+    height: auto;
+    padding-right: 45px;
+    margin: 3px;
+  }
+  .top>div>p{
+    line-height: 0;
+    font-size: 13px;
+    padding: 11px 0;
+    color: grey;
+    /* margin: 0; */
+  }
+
+  .bottom>div>p{
+    line-height: 0;
+    font-size: 13px;
+    padding: 11px 0;
+    color: grey;
+    /* margin: 0; */
   }

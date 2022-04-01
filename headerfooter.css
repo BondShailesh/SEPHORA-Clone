@@ -20,6 +20,7 @@ img{
   width: 120px;
     height: 42px;
 }
+
  #centercontainer{
      display: flex;
      justify-content: space-evenly;
@@ -33,7 +34,6 @@ img{
 p{
     padding: 15px;
 }
-
 #leftcontainer>div>i,#rightcontainer>i{
     margin-top: 15px;
     color: rgb(241,107,104);
@@ -91,8 +91,8 @@ input{
   margin-left: 24px;
 }
 br{
-  border: 1px solid rgb(32, 32, 32);
-  color: 1px solid rgb(32, 32, 32);
+  border: 0.1px solid rgb(32, 32, 32);
+  /* color: 1px solid rgb(32, 32, 32); */
 }
 #middlecontainer>:nth-child(2)>p{
   color: black;
@@ -103,4 +103,120 @@ br{
   width: 75%;
   height: 65px;
   margin: auto;
+}
+/* Header CSS is done */
+/* #mainbodypart{
+  width: 100%;
+  height: 600px;
+
+} */
+#bottomfirstcontainer{
+  width: 100%;
+  height: 160px;
+  display: block;
+  margin: auto;
+  background-color: rgb(242,242,242);
+}
+#bottomfirstcontainer>div{
+  margin: auto 380px;
+  height: 50%;
+}
+#topbottomnewstext{
+  padding-top: 53px;
+  font-size: 28px;
+} 
+
+#email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+}
+#subscribeinput{
+  WIDTH: 365PX;
+  height: 53px;
+  padding-left: 14px;
+}
+#subscribebutton{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    background: black;
+    padding: 13px 25px;
+}
+/* Bottom 1st containrer done */
+/* bottom 2nd started */
+#bottomsecontcontainer{
+  width: 80%;
+  height:auto;
+  margin: auto;
+  color: grey;
+  margin-top: 30px;
+}
+.sephorabox{
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+.sephorabox>:nth-child(2){
+  font-weight: normal;
+  font-size: 14px;
+}
+.headersaphora{
+  padding-bottom: 0;
+}
+#longtextatbottom{
+   text-align: center;
+
+}
+/* 2nd bottom is done */
+/* last bottom started */
+#iconbottomdiv{
+  width: 55%;
+  height: auto;
+  margin: auto;
+}
+#iconbottomdiv>:nth-child(1){
+ display: flex;
+ justify-content: center;
+}
+#iconbottomdiv>:nth-child(1)>h3{
+  margin: 40px auto;
+  color: black;
+  font-size: 18px;
+}
+#socialmediaicon{
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+#socialmediaicon>i{
+  color: black;
+}
+#socialmediaicon>i{
+  margin: 0px auto;
+}
+#iconbottomdiv>:nth-child(3){
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: 33px auto;
+}
+#iconbottomdiv>:nth-child(3)>p{
+  margin: auto;
+  font-size: 12px;
+}
+/* bottom icon is done */
+#extremebottom{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+#extremebottom>div>h3{
+  color: black;
+  margin-top: 34px;
+}
+#extremebottom>div>p{
+  padding-bottom: 7px;
 }
