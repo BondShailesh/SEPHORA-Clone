@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container2{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 200px;
+        }
+        .gridPrice{
+         font-weight: bold;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         
+      }
+      .gridOffer{
+         color: red;
+         margin: 0;
+         padding: 0;
+         font-weight: bold;
+         font-size: 12px;
+      }
+      .gridProductname{
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         font-weight: bold;
+         
+      }
+      .gridProductDis{
+         font-size: 14px;
+         margin: 0;
+         padding: 0;
+      }
+      .gridAddOffer{
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+      }
+      .gridImage{
+         display: block;
+         width: 25%;
+         height: 150px;
+      }
+    </style>
+</head>
+<body>
+    <button><a href="viewall.html"></a></button>
+    <div id="container2"></div>
+</body>
+</html>
+<script>
+    var cartData = JSON.parse(localStorage.getItem("COMMONLOCALSTORAGE"))
+    // console.log(cartData);
+  var totalcart = cartData.reduce(function(sum,elem){
+      return sum + (elem.price)
+
+  },0)
+  var h2 = document.createElement("h2")
+    h2.innerText = `Your total bill is ${totalcart}`
+//   var length = cartData.length;
+//   console.log(length);
+  console.log(totalcart)
+
+    
+    cartData.map(function (elem){
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image;
+    img.className="gridImage";
+
+    var offer = document.createElement("h4");
+    offer.textContent = elem.offer;
+    offer.className = "gridOffer"
+   
+    var productname = document.createElement("h5");
+    productname.textContent = elem.productname;
+    productname.className = "gridProductname"
+   
+    var productdiscription = document.createElement("p");
+    productdiscription.textContent = elem.productdiscription;
+    productdiscription.className = "gridProductDis"
+   
+    var price = document.createElement("p");
+    price.textContent = elem.price;
+    price.className = "gridPrice"
+   
+    var additionaloffer = document.createElement("p");
+    additionaloffer.textContent = elem.additionaloffer;
+    additionaloffer.className = "gridAddOffer"
+   
+    var btn = document.createElement("button");
+    btn.innerText = "Remove";
+    btn.addEventListener("click", function () {
+      removeItem(elem, index);
+    });
+
+    box.append(img , offer, productname, productdiscription, price, additionaloffer );
+    document.querySelector("#container2").append(box);
+});
+
+function removeItem(elem, index) {
+    console.log(elem, index);
+    cartData.splice(index, 1);
+    console.log(cartData);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    window.location.reload();
+  }
+</script>
