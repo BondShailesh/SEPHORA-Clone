@@ -75,4 +75,40 @@ document.querySelector("#login").addEventListener("click",funlogin)
 function funlogin(){
     window.location.href = "topicon/loginicon.html"
 }
+// 
+// buttons of everyone started
 
+document.querySelector("#makeupbutton").addEventListener("click",makeupbutton)
+function makeupbutton(){
+    window.location.href = "MAkeup.html"
+}
+
+document.querySelector("#skincarebutton").addEventListener("click",skincarebutton)
+function skincarebutton(){
+    window.location.href = "Skincare.html"
+}
+
+document.querySelector("#fragnancebutton").addEventListener("click",fragnancebutton)
+function fragnancebutton(){
+    window.location.href = "Fragrance.html"
+}
+
+document.querySelector("#haircarebutton").addEventListener("click",haircarebutton)
+function haircarebutton(){
+    window.location.href = "Haircare.html"
+}
+
+document.querySelector("#toolbrushesbutton").addEventListener("click",toolbrushesbutton)
+function toolbrushesbutton(){
+    window.location.href = "topicon/favourite.html"
+}
+
+document.querySelector("#brandsbutton").addEventListener("click",brandsbutton)
+function brandsbutton(){
+    window.location.href = "topicon/favourite.html"
+}
+
+document.querySelector("#salebutton").addEventListener("click",salebutton)
+function salebutton(){
+    window.location.href = "topicon/favourite.html"
+}
