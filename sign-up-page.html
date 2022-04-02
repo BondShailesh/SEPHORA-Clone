@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      #container{
+         width: 40%;
+         height: auto
+         ;
+         margin: auto;
+         background-color: black;
+         color: white;
+         text-align: center;
+      }
+      #submit{
+         margin-top: 20px;
+
+      }
+   </style>
+
+</head>
+<body>
+   <div id="container">
+      <form action="" id="form">
+      <p>Name</p>
+      <input type="text" placeholder="FullName" id="name" >
+      <p>Email</p>
+      <input type="email" placeholder="Enter e-mail" id="email">
+      <p>Password</p>
+      <input type="password" placeholder="Enter Password" id="pass">
+      <p>Phone Number</p>
+      <input type="text" placeholder="Enter Number" id="number"><br>
+      <input type="submit" id="submit">
+      </form>
+
+   </div>
+</body>
+</html>
+
+
+<script>
+   document.querySelector("#form").addEventListener("submit", signUpFun);
+
+  var userData = JSON.parse(localStorage.getItem("userCreds"))||[]
+  function signUpFun() {
+    event.preventDefault();
+
+    var userObj = {
+      email: document.querySelector("#email").value,
+      password: document.querySelector("#pass").value,
+    
+    };
+    userData.push(userObj);
+    localStorage.setItem("userCreds",JSON.stringify(userData))
+
+  }
+</script>
