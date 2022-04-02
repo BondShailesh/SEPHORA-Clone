@@ -112,3 +112,17 @@ document.querySelector("#salebutton").addEventListener("click",salebutton)
 function salebutton(){
     window.location.href = "topicon/favourite.html"
 }
+
+document.querySelector("#nnnow").addEventListener("click",nnnow)
+function nnnow(){
+    window.location.href = "index.html"
+}
+document.querySelector("#lastbutton").addEventListener("click",lastbutton)
+function lastbutton(){
+    window.location.href = "index.html"
+}
+document.querySelector("#nnnow").addEventListener("click",nnnow) 
+function nnnow(){
+    window.location.href = "index.html"
+}
+
