@@ -78,5 +78,7 @@
     /* margin: 0; */
   }
   #headerbottomcontainer{
+    display: flex;
     margin-bottom: -10px;
+    margin: auto;
   }

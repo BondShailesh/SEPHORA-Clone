@@ -125,4 +125,12 @@ document.querySelector("#nnnow").addEventListener("click",nnnow)
 function nnnow(){
     window.location.href = "index.html"
 }
+document.querySelector("#imagesrc").addEventListener("click",imagesrc) 
+function imagesrc(){
+    window.location.href = "Makeup.html"
+}
+document.querySelector("#buttonkgk").addEventListener("click",buttonkgk) 
+function buttonkgk(){
+    window.location.href = "Makeup.html"
+}
 

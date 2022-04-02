@@ -119,7 +119,9 @@ br{
   background-color: rgb(242,242,242);
 }
 #bottomfirstcontainer>div{
-  margin: auto 380px;
+  display: flex;
+  justify-content: center;
+  margin: auto ;
   height: 50%;
 }
 #topbottomnewstext{
@@ -228,7 +230,7 @@ br{
 /* Body part startted */
 #multiplebutton{
   display: flex;
-  width: 75%;
+  width: 90%;
   height: auto;
   margin: auto;
 }
@@ -515,7 +517,7 @@ br{
 #sephora:hover{
  cursor: pointer;
 }
-#login:hover{
+#sephora:hover{
  cursor: pointer;
 }
 
