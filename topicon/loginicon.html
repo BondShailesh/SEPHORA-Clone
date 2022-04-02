@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Skincare.html">
 </head>
 <body>
-    <h1>loginicon</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="loginBtn">Log in</button>
+  
+</button>
+     
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Join now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div>
+      <form action="submit" id="form">
+         <p><b>Create an Account</b></p>
+          
+          <input type="email" id="email" placeholder="Email address" ><br>
+          <input style="margin-bottom: 20px;" type="password" id="pass" placeholder="Password (6 to 12 characters"><br>
+          
+        
+          <input style="background-color: hotpink; color: white; border: 1px solid;" type="submit" placeholder="">
+      </form>
+   </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+        <p><b>Not have an account?<span><a href="sign-up-page.html">  SignUp</a></span></b></p>
+
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
