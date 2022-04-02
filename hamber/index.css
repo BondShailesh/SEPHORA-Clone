@@ -39,7 +39,9 @@
 }
 .nav li{
     list-style: none;
-    padding: 10px;
+    padding: 15px;
+    border: 0.001px solid grey;
+    width: 100%;
 }
 .icon .bar{
     background-color: aliceblue; 
@@ -55,15 +57,23 @@
 }
 .change{
     background-color: white;
-    height: 100vh;
-    margin: 0;
+    height: 95vh;
+    /* margin: 0; */
     position: absolute;
     size: 30px;
     top: 0;
-    z-index: -100;
+    z-index: 1;
     width: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    margin-top: 52px;
+    margin-left: -120px;
+}
+#nav>li>i{
+    position: absolute;
+    right: 7px;
+}
+#nav>li:hover{
+    background-color: rgb(243,243,243);
 }

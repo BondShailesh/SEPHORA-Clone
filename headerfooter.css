@@ -65,7 +65,7 @@ p{
 
 #middlecontainer{
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
 }
@@ -103,6 +103,7 @@ br{
   width: 75%;
   height: 65px;
   margin: auto;
+  padding: auto;
 }
 /* Header CSS is done */
 /* #mainbodypart{
@@ -493,6 +494,5 @@ br{
 #lastbutton>button>i{
   padding: 9px;
 }
-
 
 
