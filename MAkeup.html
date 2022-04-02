@@ -5,8 +5,469 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #poster{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            background-image: url(https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/MakeupDesktop.jpg);
+            text-align: center;
+            background-size: cover;
+        }
+        #box1{
+            /* border: 1px solid black; */
+            width: 60%;
+            height: 70px;
+            margin-left: 420px;
+            margin-top: 50px;
+        }
+        .A{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+            background-color: rgb(243,243,243);
+        }
+      
+         .B{
+             /* border: 1px solid black; */
+            width: 100%;
+            height: 70px;
+            display: flex;
+            background-color: rgb(243,243,243);
+         }
+        .Aa{
+            width: 40%;
+            height: 70px; 
+            text-align: center;
+        }
+        .Ab{
+            /* border: 1px solid black; */
+            width: 60%;
+            height: 70px; 
+            justify-content: center;
+            padding-right: 50px;
+        }
+   
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border: 1px solid black; */
+            gap: 20px;
+            width: 70%;
+            height: 450px;
+            margin-top: 30px;
+            margin-left: 370px;
+            text-align: center;
+            font-size:larger;
+            
+         }
+        img{
+            max-width: 170px;
+            max-height: 320px;
+        }
+      
+        #container2{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border: 1px solid black; */
+            gap: 20px;
+            width: 70%;
+            height: 450px;
+            margin-top: 30px;
+            margin-left: 370px;
+            text-align: center;
+            font-size:larger;
+        }
+        #container3{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border: 1px solid black; */
+            gap: 20px;
+            width: 70%;
+            height: 450px;
+            margin-top: 30px;
+            margin-left: 370px;
+            text-align: center;
+            font-size:larger;
+        }
+        #container4{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border: 1px solid black; */
+            gap: 20px;
+            width: 70%;
+            height: 450px;
+            margin-top: 30px;
+            margin-left: 370px;
+            text-align: center;
+            font-size:larger;
+        }
+        .view{
+            width: 70%;
+            height: 40px;
+            margin-top: 70px;
+            margin-left: 370px;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+
+            border: 3px solid black;
+            
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1 id="kuchv">Abhishek </h1>
+  <div id="poster"></div>
+  <div id="box1">
+      <div class="A">
+          <div class="Aa"><h1>Just Arrived</h1></div>
+          <div class="Ab"><h4>Hey, beauty buff! We've got the latest and the best new makeup launches in the biz</h4></div>
+      </div>
+  </div>
+  <div id="container1"></div>
+  <div id="box1">
+    <div class="B">
+        <div class="Aa"><h1>Bestsellers</h1></div>
+        <div class="Ab"><h4>If you don't already have these Sephora topsellers from this year, you're missing out!</h4></div>
+    </div>
+</div>
+
+<div id="container2"></div>
+<div id="box1">
+    <div class="B">
+        <div class="Aa"><h1>Foundation</h1></div>
+        <div class="Ab"><h4>With complete coverage, flawless finiosh and skin benefits, these foundation will keep you looking picture-perfect</h4></div>
+    </div>
+ 
+
+ 
+</div>
+<div id="container3"></div>
+<div id="box1">
+    <div class="B">
+        <div class="Aa"><h1>Lipstick </h1></div>
+        <div class="Ab"><h4>Invest in bold bright and muted lip shaded with flattering finish that work for every skin tone</h4></div>
+    </div>
+</div>
+   <div id="container4"></div>
+   <div class="view">View All</div>
+
 </body>
 </html>
+<script>
+ ustarrived = [
+{ 
+    image: "https://cdn06.nnnow.com/web-images/medium/styles/MWMVLMAOP67/1605089862026/1.jpg",
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "BENEFIT COSMETICS",
+    productdiscription: "BADgal Bang Volumizing Mascara Mini- Black" ,
+    price: "Rs. 1,240",
+    additionaloffer: "3 more offers",
+},
+{ 
+    image: "https://cdn13.nnnow.com/web-images/medium/styles/FXT59MNF6NW/1605088758122/1.jpg" ,
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "BENEFIT COSMETICS" ,
+    productdiscription:  "The Porefessionaal Peral Primer illumaniting Face Primer" ,
+    price: "Rs. 3,300",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn14.nnnow.com/web-images/medium/styles/E5LHWCKCK3S/1539589327450/1.jpg",
+    offer:"OFFER",
+    // icon : <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Cream lip Stain - 84 Rose Redux"  ,
+    price: "Rs. 1,220" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn01.nnnow.com/web-images/medium/styles/KIJW8L47V8Z/1605089041681/1.jpg" ,
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "BENEFIT COSMETICS" ,
+    productdiscription: "BADgal Bang Volumizing Mascara Black" ,
+    price: "Rs. 2,510",
+    additionaloffer : "3 more offers" ,
+}
+
+// { 
+//     image: https://cdn10.nnnow.com/web-images/medium/styles/JDV714RL1OH/1539586268872/1.jpg,
+//     offer: OFFER ,
+//     icon:  <i class="fa-solid fa-badge-percent"></i>,
+//     productname: SEPHOPRA COLLECTION ,
+//     productdiscription: Color Hit Nail Polish - L178 Rose Bouquet,
+//     price: Rs. 440 ,
+//     additionaloffer: 3 more offers,
+// },
+
+// { 
+//     image: https://cdn05.nnnow.com/web-images/medium/styles/V21Z2LOB7HR/1533204761626/1.jpg,
+//     offer: OFFER ,
+//     icon: <i class="fa-solid fa-badge-percent"></i> ,
+//     productname: SEPHOPRA COLLECTION;
+//     productdiscription: Beauty Amplifer Smothing Primer,
+//     price: Rs 1,320,
+//     additionaloffer: 3 more offers ,
+// },
+
+// { 
+//     image: https://cdn00.nnnow.com/web-images/medium/styles/U6377AB0699/1539593212544/1.jpg,
+//     offer: OFFER,
+//     icon: <i class="fa-solid fa-badge-percent"></i>,
+//     productname: SEPHORA COLLECTION,
+//     productdiscription: CREAM Lip Stain - 97 red Desert,
+//     price: Rs. 1,220 ,
+//     additionaloffer: 3 more offers ,
+//  }
+];
+  
+datajustarrived.map(function(elem){
+
+    var box1 = document.createElement("div");
+
+   
+    var img = document.createElement("img");
+    img.src=elem.image;
+    
+    // var icon = document.createElement("img");
+    // offer.src=elem.icon
+   
+    var offer = document.createElement("h4");
+    offer.textContent = elem.offer;
+   
+    var productname = document.createElement("h5");
+    productname.textContent = elem.productname;
+   
+    var productdiscription = document.createElement("p");
+    productdiscription.textContent = elem.productdiscription;
+   
+    var price = document.createElement("h6");
+    price.textContent = elem.price;
+   
+    var additionaloffer = document.createElement("p");
+    additionaloffer.textContent = elem.additionaloffer;
+
+    box1.append(img, offer, productname, productdiscription, price, additionaloffer );
+    document.querySelector("#container1").append(box1);
+});
+
+var dataBestseller = [
+{ 
+    image: "https://cdn19.nnnow.com/web-images/medium/styles/2PXZRRLJAKQ/1605088422828/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "BENEFIT COSMETICS",
+    productdiscription: "The Porefessionaal Face Primer",
+    price: "Rs, 1240 - Rs. 3,300",
+    additionaloffer: "3 more offers",
+},
+{ 
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/LF9B8BFLIIQ/1519382076017/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Cream Lips - 41 Vintage Rosewood",
+    price: "Rs, 1,220",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn06.nnnow.com/web-images/medium/styles/MWMVLMAOP67/1605089862026/1.jpg",
+    offer: "OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "BENEFIT COLLECTION" ,
+    productdiscription: "BADgal Bangl Volumizing Mini - Black",
+    price: "Rs. 1,240" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn07.nnnow.com/web-images/medium/styles/XIFN4DSF1J7/1559120900591/1.jpg" ,
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "ANASTASIA BEVERLY HILLS" ,
+    productdiscription: "DIPBROW Pomade - Dark Brown" ,
+    price: "Rs. 2,280",
+    additionaloffer: "3 more offers",
+}];
+
+dataBestseller.map(function(elem){
+
+var box1 = document.createElement("div");
+
+var img = document.createElement("img");
+img.src=elem.image;
+
+// var icon = document.createElement("img");
+// offer.src=elem.icon
+
+var offer = document.createElement("h4");
+offer.textContent = elem.offer;
+
+var productname = document.createElement("h5");
+productname.textContent = elem.productname;
+
+var productdiscription = document.createElement("p");
+productdiscription.textContent = elem.productdiscription;
+
+var price = document.createElement("h6");
+price.textContent = elem.price;
+
+var additionaloffer = document.createElement("p");
+additionaloffer.textContent = elem.additionaloffer;
+
+box1.append(img, offer, productname, productdiscription, price, additionaloffer );
+document.querySelector("#container2").append(box1);
+});
+
+var datafoundation = [
+{ 
+    image: "https://cdn17.nnnow.com/web-images/medium/styles/9CAW879P336/1567571858068/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "HUDA BEAUTY",
+    productdiscription: "Easy Bake Loose Powder Foundation - Banana bread",
+    price: "Rs. 2,955",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn08.nnnow.com/web-images/medium/styles/2MDPNVHRIUF/1495709963378/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "CLINIQUE",
+    productdiscription: "Even Better Makeup SPF 15 - CN 52",
+    price: "Rs. 2,900" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image:"https://cdn15.nnnow.com/web-images/medium/styles/G80RER5PPS3/1631790635720/1.jpg" ,
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "HUDA BEAUTY",
+    productdiscription: "Dandelion Twinkle Powder Highlighter",
+    price: "Rs. 3,300" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image:"https://cdn15.nnnow.com/web-images/medium/styles/YI7Z61K5ZJ0/1551250957258/1.jpg" ,
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "SEPHOPRA COLLECTION" ,
+    productdiscription: "Matt Performance Powder Foundation - 25 Beige",
+    price:"Rs. 1,500" ,
+    additionaloffer: "3 more offers",
+}];
+
+datafoundation.map(function(elem){
+
+var box1 = document.createElement("div");
+
+var img = document.createElement("img");
+img.src=elem.image;
+
+// var icon = document.createElement("img");
+// offer.src=elem.icon
+
+var offer = document.createElement("h4");
+offer.textContent = elem.offer;
+
+var productname = document.createElement("h5");
+productname.textContent = elem.productname;
+
+var productdiscription = document.createElement("p");
+productdiscription.textContent = elem.productdiscription;
+
+var price = document.createElement("h6");
+price.textContent = elem.price;
+
+var additionaloffer = document.createElement("p");
+additionaloffer.textContent = elem.additionaloffer;
+
+box1.append(img, offer, productname, productdiscription, price, additionaloffer );
+document.querySelector("#container3").append(box1);
+});
+
+var datalipstic = [
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/CHFYZVTDDRV/1614240117954/1.jpg" ,
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "HUDA BEAUTY" ,
+    productdiscription: "Liquid Matte Lip Stick - Trophy WIfe",
+    price: "Rs. 1,825" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/1MJW5GY2Y4G/1533204028618/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "#Lipstories Lip Stick - 31 Golden Gate",
+    price: "Rs, 850",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/GOP1YXWVZPO/1555307201332/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Rouge lacqure lip Stick - Rise Above",
+    price: "Rs. 1,220" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn19.nnnow.com/web-images/medium/styles/A9YSSVLYMM5/1567765427426/1.jpg",
+    offer:"OFFER" ,
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "HUDA BEAUTY" ,
+    productdiscription:"Powder Bullet Matte Lip Stick - third Date" ,
+    price:"Rs. 1,993" ,
+    additionaloffer: "3 more offers",
+}];
+
+datalipstic.map(function(elem){
+
+var box1 = document.createElement("div");
+
+var img = document.createElement("img");
+img.src=elem.image;
+
+// var icon = document.createElement("img");
+// offer.src=elem.icon
+
+var offer = document.createElement("h4");
+offer.textContent = elem.offer;
+
+var productname = document.createElement("h5");
+productname.textContent = elem.productname;
+
+var productdiscription = document.createElement("p");
+productdiscription.textContent = elem.productdiscription;
+
+var price = document.createElement("h6");
+price.textContent = elem.price;
+
+var additionaloffer = document.createElement("p");
+additionaloffer.textContent = elem.additionaloffer;
+
+box1.append(img, offer, productname, productdiscription, price, additionaloffer );
+document.querySelector("#container4").append(box1);
+});
+
+
+</script>

@@ -147,6 +147,13 @@
          /* margin-left: 40px; */
          
       }
+      .moisturizersGrid{
+         display: grid;
+         grid-template-rows: repeat(1,450px);
+         grid-template-columns: repeat(4,1fr);
+         gap: 10px;
+         text-align: center;
+      }
       .viewAll{
          text-align: right;
       }
@@ -338,7 +345,7 @@
       <div class="modal-footer">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button> -->
-        <p><b>Not have an account?<span><a href="sign-up-page.html">  SignUp</a></span></b></p>
+        <p><b>Not have an account?<span><a href="">  SignUp</a></span></b></p>
 
       </div>
     </div>
@@ -798,156 +805,8 @@
  
     <!-- copy whole HTML/CSS AND SCRIPT and change all the name of the list only don't change anything (ID,CLASS ,SCRIPT DON'T CHANGE)-->
 
-    <div id="outer" class="container">
-      <div id="firstImg">
-        <a
-          href="https://sephora.nnnow.com/makeup-products?priority=TXG4I0R2LRH--5SKH2OSOYXJ--L5SEVSH4WKH--05FS3K01TZR--VAX60VQ7U6C"
-          ><img
-            src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/SkincareDesktop.jpg"
-            alt=""
-        /></a>
-      </div>
-      <div class="fullBox">
-        <div id="left-wala-box">
-          <div class="left-div-shop"><h3>Shop</h3></div>
-          <button class="btn" onclick="mosis()">MOSISTURIZERS</button>
-          <div id="Mosis" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href="skinCareMosi.html"> Moisturizers</a></li>
-              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
-              <li class="list"><a class="ancher" href="">Face Oils </a></li>
-              <li class="list">
-                <a class="ancher" href="">Mists & Essences </a>
-              </li>
-              <li class="list">
-                <a class="ancher" href=""> BB & CC Creams</a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
-            </ul>
-          </div>
-
-          <button class="btn" onclick="clean()">CLEANSERS</button>
-          <div id="clean" class="hide">
-            <ul class="inside-list">
-              <li class="list">
-                <a class="ancher" href=""> Face Wash & Cleansers</a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Exfoliators</a></li>
-              <li class="list">
-                <a class="ancher" href="">Makeup Removers </a>
-              </li>
-              <li class="list"><a class="ancher" href="">Face Wipes </a></li>
-              <li class="list"><a class="ancher" href=""> Toners</a></li>
-              <li class="list">
-                <a class="ancher" href=""> Blotting Papers</a>
-              </li>
-              <li class="list">
-                <a class="ancher" href=""> Hand Sanitizers</a>
-              </li>
-            </ul>
-          </div>
-          <button class="btn" onclick="treat()">
-            TREATMENTS & HIGHTECH TOOLS
-          </button>
-          <div id="treat" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href=""> Face Serums</a></li>
-              <li class="list">
-                <a class="ancher" href=""> Cleansing Tools</a>
-              </li>
-              <li class="list">
-                <a class="ancher" href="">Anti-Aging Tools </a>
-              </li>
-              <li class="list"><a class="ancher" href="">Face Masks </a></li>
-              <li class="list">
-                <a class="ancher" href=""> Eye Cream & Treatments</a>
-              </li>
-            </ul>
-          </div>
-          <button class="btn" onclick="mask()">MASKS</button>
-          <div id="mask" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href=""> Face Masks</a></li>
-              <li class="list"><a class="ancher" href="">Sheet Masks</a></li>
-              <li class="list"><a class="ancher" href="">Eye Masks </a></li>
-              <li class="list">
-                <a class="ancher" href="">Nose Masks & Strips </a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Lip Masks</a></li>
-              <li class="list"><a class="ancher" href=""> Hair Masks</a></li>
-              <li class="list"><a class="ancher" href=""> Foot Masks</a></li>
-            </ul>
-          </div>
-          <button class="btn" onclick="bath()">BATH & SHOWER</button>
-          <div id="bath" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
-              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
-              <li class="list"><a class="ancher" href="">Face Oils </a></li>
-              <li class="list">
-                <a class="ancher" href="">Mists & Essences </a>
-              </li>
-              <li class="list">
-                <a class="ancher" href=""> BB & CC Creams</a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
-            </ul>
-          </div>
-          <button class="btn" onclick="bodyM()">BODY MOISTURIZERS</button>
-          <div id="bodyM" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
-              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
-              <li class="list"><a class="ancher" href="">Face Oils </a></li>
-              <li class="list">
-                <a class="ancher" href="">Mists & Essences </a>
-              </li>
-              <li class="list">
-                <a class="ancher" href=""> BB & CC Creams</a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
-            </ul>
-          </div>
-          <button class="btn" onclick="vegan()">VEGAN</button>
-          <div id="vegan" class="hide">
-            <ul class="inside-list">
-              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
-              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
-              <li class="list"><a class="ancher" href="">Face Oils </a></li>
-              <li class="list">
-                <a class="ancher" href="">Mists & Essences </a>
-              </li>
-              <li class="list">
-                <a class="ancher" href=""> BB & CC Creams</a>
-              </li>
-              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="rigth-wala-box">
-
-           <div><img class="just-arrived-image A" src="https://logan.nnnow.com/content/dam/nnnow-project/16-april-2020/makeup/13APR20_MAKEUP_CB_STRIP1_DESK_1.jpg" alt=""></div>
-           <div><p class="viewAll">VIEW ALL</p></div>
-           
-           <div class="just-arrived-outer">
-            <!-- dataComingWithTheHelpOfJS  -->
-            </div>
-            <div><img class="just-arrived-image" src="https://logan.nnnow.com/content/dam/nnnow-project/17-april-2020/13APR20_SKINCARE_CB_STRIP2_DESK.jpg" alt=""></div>
-            <div><p class="viewAll">VIEW ALL</p></div>
-            <div class="best-seller-outer">
-             <!-- dataComingWithTheHelpOfJS  -->
-             </div>
-            <div><img class="just-arrived-image" src="https://logan.nnnow.com/content/dam/nnnow-project/17-april-2020/13APR20_SKINCARE_CB_STRIP2_DESK.jpg" alt=""></div>
-            <div><p class="viewAll">VIEW ALL</p></div>
-            <div class="data-cleansers-outer">
-             <!-- dataComingWithTheHelpOfJS  -->
-             </div>
-            
-        </div>
-      </div>
-    </div>
-  
+    
+    <div class="moisturizersGrid"></div>
   
 
 
@@ -1057,241 +916,79 @@
     <script src="hamber/index.js"></script>
 <script src="index.js"></script>
 <script src="curosuel/curousel.js"></script>
-
 <script>
-    document.querySelector("#form").addEventListener("submit", loginFun);
-  var regdUsers = JSON.parse(localStorage.getItem("userCreds"));
+   
+   
+    document.querySelector("#form").addEventListener("submit", myFunction);
+    var details = JSON.parse(localStorage.getItem("fullDetails")) || [];
+   // var details=[];
 
-  function loginFun() {
-    event.preventDefault();
-    var enteredEmail = document.querySelector("#email").value;
-    var enteredPass = document.querySelector("#pass").value;
+    function myFunction() {
+      event.preventDefault();
+      var detailsObj = {
+        email: document.querySelector("#email").value,
+        pass: document.querySelector("#pass").value,
 
-    for (var i = 0; i < regdUsers.length; i++) {
-      console.log(regdUsers[i]);
-      if (
-        regdUsers[i].email == enteredEmail &&
-        regdUsers[i].password == enteredPass
-      ) {
-        alert("login success");
-        window.location.href = "skincare2.html"; 
-        break;
-      } else {
-        console.log("login failed");
-        alert("Please signUp or fill correct details")
-      }
+      };
+      // details.push(detailsObj);
+      details.push(detailsObj);
+      console.log(details)
+      
+      //array of objects
+
+      localStorage.setItem("loginDetails", JSON.stringify(details));
+      // document.querySelector("#name").value = "";
+      document.querySelector("#email").value = "";
+      document.querySelector("#pass").value = "";
     }
-  }
 </script>
-
 <script>
-    function mosis() {
-      let x = document.getElementById("Mosis");
-      x.style.color = "red";
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function clean() {
-      let x = document.getElementById("clean");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function treat() {
-      let x = document.getElementById("treat");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function mask() {
-      let x = document.getElementById("mask");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function bath() {
-      let x = document.getElementById("bath");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function bodyM() {
-      let x = document.getElementById("bodyM");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  
-    function vegan() {
-      let x = document.getElementById("vegan");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
-  <script>
-     var datajustarrived = [
+
+
+var dataToners = [
 { 
-    image: "https://cdn06.nnnow.com/web-images/medium/styles/CE47TVIQ8DA/1542965062673/1.jpg",
-    offer: "OFFER",
-    // icon: <i class="fa-solid fa-badge-percent"></i>,
-    productname: "SHISEIDO",
-    productdiscription: "Oil Control Blotting paper" ,
-    price: "Rs. 1,240",
-    additionaloffer: "3 more offers",
-},
-{ 
-    image: "https://cdn13.nnnow.com/web-images/medium/styles/LIZSZHSZIRA/1542965062675/1.jpg" ,
-    offer: "OFFER",
-    // icon: <i class="fa-solid fa-badge-percent"></i> ,
-    productname: "SHISEIDO" ,
-    productdiscription:  "Essential energy Moisture Cream" ,
-    price: "Rs. 3,300",
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/X55FUUTFIBV/1585571862872/1.jpg" ,
+    offer:"OFFER" ,
+   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "PIXI" ,
+    productdiscription: "Glow tonic",
+    price: "Rs. 1,825" ,
     additionaloffer: "3 more offers",
 },
 
 { 
-    image: "https://cdn18.nnnow.com/web-images/medium/styles/AXHPRYTDNZF/1535611149352/1.jpg",
-    offer:"OFFER",
-    // icon : <i class="fa-solid fa-badge-percent"></i> ,
-    productname: "SHISEIDO",
-    productdiscription: "Waso Quick Matte Moisture"  ,
+    image: "https://cdn10.nnnow.com/web-images/medium/styles/4N5E79BLXZ5/1585571862825/1.jpg",
+    offer:"OFFER" ,
+   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "PIXI",
+    productdiscription: "Glow tonic",
+    price: "Rs, 850",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn19.nnnow.com/web-images/medium/styles/SP6SVDDLUEL/1585571862865/1.jpg",
+    offer:"OFFER" ,
+   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "PIXI",
+    productdiscription: "Vitamin C Tonic",
     price: "Rs. 1,220" ,
     additionaloffer: "3 more offers",
 },
 
 { 
-    image: "https://cdn09.nnnow.com/web-images/medium/styles/LK8JYTR9UEY/1593684983302/1.jpg" ,
-    offer: "OFFER",
-    // icon: <i class="fa-solid fa-badge-percent"></i> ,
-    productname: "SHISEIDO" ,
-    productdiscription: "Waso Quick Gentle Cleanse" ,
-    price: "Rs. 2,510",
-    additionaloffer : "3 more offers" ,
-}
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/TXE2R47PUKH/1636700669358/1.jpg",
+    offer:"OFFER" ,
+   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "MARIO BADESCU" ,
+    productdiscription:"Anti Aging Glycolic Acid Toner" ,
+    price:"Rs. 1,993" ,
+    additionaloffer: "3 more offers",
+},
 ];
+  
 
-
-datajustarrived.map(function(elem){
-   
-   var box1 = document.createElement("div");
-   
-   var mainBox =document.createElement("div");
-   mainBox.className="cont"
-   var img = document.createElement("img");
-   img.src=elem.image;
-   img.className="gridImage";
-   var overlayBox = document.createElement("div");
-   overlayBox.className="overlay";
-   var btnBox =document.createElement("div");
-   btnBox.className ="addCart";
-   
-   var btn=document.createElement("button");
-   btn.innerText="addToCArt";
-   btn.className="addBtn";
-   btnBox.append(btn);
-   overlayBox.append(btnBox);
-   
-   mainBox.append(img,overlayBox);
-   
-   // var icon = document.createElement("img");
-    // offer.src=elem.icon
-   
-    var offer = document.createElement("p");
-    offer.textContent = elem.offer;
-    offer.className = "gridOffer"
-    
-    var productname = document.createElement("p");
-    productname.textContent = elem.productname;
-    productname.className = "gridProductname"
-    
-    var productdiscription = document.createElement("p");
-    productdiscription.textContent = elem.productdiscription;
-    productdiscription.className = "gridProductDis"
-    
-    var price = document.createElement("p");
-    price.textContent = elem.price;
-    price.className = "gridPrice"
-    
-    var additionaloffer = document.createElement("p");
-    additionaloffer.textContent = elem.additionaloffer;
-    additionaloffer.className = "gridAddOffer"
-    
-    box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer );
-    document.querySelector(".just-arrived-outer").append(box1);
-   });
-
-
-
-
-
-   var dataBestseller = [
-   { 
-       image: "https://cdn07.nnnow.com/web-images/medium/styles/FX0DK0HJ0OW/1487241114487/1.jpg",
-       offer:"OFFER",
-       /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
-       productname: "CLINIQUE",
-       productdiscription: "SUPER CITY BLOCK OIL-FREE DALY FACE WASH",
-       price: "Rs, 1240 - Rs. 3,300",
-       additionaloffer: "3 more offers"
-   },
-   { 
-       image: "https://cdn05.nnnow.com/web-images/medium/styles/8I9U0DQTORN/1494572046851/1.jpg",
-       offer:"OFFER" ,
-       /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
-       productname: "CLINIQUE",
-       productdiscription: "Vintage RosewoodLiquid Facial Soap Mild",
-       additionaloffer: "3 more offers",
-   },
-   
-   { 
-       image: "https://cdn05.nnnow.com/web-images/medium/styles/AHI3HAMXH5V/1494572076433/1.jpg",
-       offer: "OFFER" ,
-       /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
-       productname: "CLINIQUE" ,
-       productdiscription: "Dramatri cally differ Moisture Zing gel",
-       price: "Rs. 1,240" ,
-       additionaloffer: "3 more offers",
-   },
-   
-   { 
-       image: "https://cdn05.nnnow.com/web-images/medium/styles/Y8645FK4V30/1494571104845/1.jpg" ,
-       offer:"OFFER" ,
-       /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
-       productname: "CLINIQUE" ,
-       productdiscription: "Clarifying loation 2- combination" ,
-       price: "Rs. 2,280",
-       additionaloffer: "3 more offers",
-   }
-   ];
-   
-   
-   
-   
-
-
-
-dataBestseller.map(function(elem){
+dataToners.map(function(elem){
 
     var box1 = document.createElement("div");
 
@@ -1337,99 +1034,7 @@ dataBestseller.map(function(elem){
     additionaloffer.className = "gridAddOffer"
 
     box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer );
-    document.querySelector(".best-seller-outer").append(box1);
-});
-
-
- var DataCleansers = [
- { 
-    image: "https://cdn09.nnnow.com/web-images/medium/styles/9NY0C83T5FJ/1593084196288/1.jpg",
-    offer:"OFFER" ,
-   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
-    productname: "CLINIQUE",
-    productdiscription: "Take The Day off Cleansin",
-    price: "Rs. 2,955",
-    additionaloffer: "3 more offers",
-},
-
-{ 
-    image: "https://cdn10.nnnow.com/web-images/medium/styles/J6QHNF8V3R4/1626067212265/1.jpg",
-    offer:"OFFER" ,
-   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
-    productname: "CLINIQUE",
-    productdiscription: "Even Better Makeup SPF 15 - CN 52",
-    price: "Rs. 2,900" ,
-    additionaloffer: "3 more offers",
-},
-
-{ 
-    image:"https://cdn02.nnnow.com/web-images/medium/styles/MWKQ8P01O96/1487228753291/1.jpg" ,
-    offer:"OFFER" ,
-   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
-    productname: "HUDA BEAUTY",
-    productdiscription: "Dandelion Twinkle Powder Highlighter",
-    price: "Rs. 3,300" ,
-    additionaloffer: "3 more offers",
-},
-
-{ 
-    image:"https://cdn02.nnnow.com/web-images/medium/styles/KQQ56WIJYCI/1638536896020/1.jpg" ,
-    offer:"OFFER" ,
-   //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
-    productname: "CLINIQUE" ,
-    productdiscription: "CHARCOAL Cleareance",
-    price:"Rs. 1,500" ,
-    additionaloffer: "3 more offers",
-}
-];
-
-DataCleansers.map(function(elem){
-
-    var box1 = document.createElement("div");
-
-   var mainBox =document.createElement("div");
-   mainBox.className="cont"
-   var img = document.createElement("img");
-   img.src=elem.image;
-   img.className="gridImage";
-   var overlayBox = document.createElement("div");
-   overlayBox.className="overlay";
-   var btnBox =document.createElement("div");
-   btnBox.className ="addCart";
-
-   var btn=document.createElement("button");
-   btn.innerText="addToCArt";
-   btn.className="addBtn";
-   btnBox.append(btn);
-   overlayBox.append(btnBox);
-   
-    mainBox.append(img,overlayBox);
-    
-    // var icon = document.createElement("img");
-    // offer.src=elem.icon
-   
-    var offer = document.createElement("p");
-    offer.textContent = elem.offer;
-    offer.className = "gridOffer"
-    
-    var productname = document.createElement("p");
-    productname.textContent = elem.productname;
-    productname.className = "gridProductname"
-    
-    var productdiscription = document.createElement("p");
-    productdiscription.textContent = elem.productdiscription;
-    productdiscription.className = "gridProductDis"
-    
-    var price = document.createElement("p");
-    price.textContent = elem.price;
-    price.className = "gridPrice"
-    
-    var additionaloffer = document.createElement("p");
-    additionaloffer.textContent = elem.additionaloffer;
-    additionaloffer.className = "gridAddOffer"
-
-    box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer );
-    document.querySelector(".data-cleansers-outer").append(box1);
+    document.querySelector(".moisturizersGrid").append(box1);
 });
 
 

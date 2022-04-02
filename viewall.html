@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container1{
+            /* border: 1px solid black; */
+            height: 1200px;
+            width: 62%;
+            margin-left: 80px;
+            margin-right: 150px;
+            float: right;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(10,1fr);
+            text-align: center;
+            font-size:larger;
+            margin-top: 50px;
+            
+        }
+        img{
+            max-width: 170px;
+            max-height: 320px;
+        }
+        #container2{
+            /* border: 1px solid black; */
+            height: 600px;
+            width: 12%;
+            margin-left: 100px;
+            margin-top: 20px;
+           
+        }
+    #container3{
+        /* border: 1px solid black; */
+            height: 500px;
+            width: 12%;
+            margin-left: 100px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+     li{
+         font-size: larger;
+         }
+         *{
+             box-sizing: border-box;
+         }
+     .selection{
+         position: relative;
+         display: inline-block;
+         font-size: 14px;
+         color: #888;
+         margin-top: 25px;
+     }
+     .selection select{
+         display: block;
+         width: 250px;
+         min-height: 35px;
+         background: white;
+         border: 2px solid black;
+         outline: none;
+         padding: 0 20px 0 10px;
+         margin-top: 5px;
+         width: 100%;
+         cursor: pointer;
+         margin-top: 10px;
+         appearance: none;
+         -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+     }
+     .selection::after{
+      content: '';
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent;
+      border-top-color: #222;
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+     }
+     .selection .selection-options{
+         list-style: none;
+         padding: 5px 0px;
+         margin: 0;
+         background: black;
+         border-radius: 4px;
+         z-index: 1;
+         width: 96%;
+         position: absolute;
+         left: 2%;
+         top: 35%;
+     }
+     .selection .selection-options li{
+         height: 35px;
+         display: flex;
+         align-items: center;
+         padding: 0 15px;
+         cursor: pointer;
+         transition: background 0.3s easy;
+     }
+     .selection .selection-options li:hover{
+        background: #03A9F4;
+     }
+     button{
+         margin-top: 25px;
+         border-radius: 5px;
+         background-color: black;
+         color: white;
+         max-width: fit-content;
+     }
+     #shorting{
+         height: 30px;
+        
+         width: 12%;
+            margin-left: 100px;
+            margin-top: 20px;
+            cursor: pointer;
+        
+     }
+     .gridPrice{
+         font-weight: bold;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         
+      }
+      .gridPrice{
+         font-weight: bold;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         
+      }
+      .gridOffer{
+         color: red;
+         margin: 0;
+         padding: 0;
+         font-weight: bold;
+         font-size: 12px;
+      }
+      .gridProductname{
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         font-weight: bold;
+         
+      }
+      .gridProductDis{
+         font-size: 14px;
+         margin: 0;
+         padding: 0;
+      }
+      .gridAddOffer{
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+
+      }
+      .cont{
+         position: relative;
+      }
+      .overlay{
+          position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background-color: #008CBA;
+         overflow: hidden;
+         width: 100%;
+         height: 0;
+         transition: .5s ease;
+      }
+      .cont:hover .overlay{
+         height:20%;
+      }
+
+    </style>
+</head>
+<body> 
+    
+    <div id="container1"></div> 
+    <div id="container2">
+        <h4 style="margin: auto;">CATEGORY</h4>
+        <ul type="square" style="color: rgb(255,51,153);">
+            <dl>
+                <li >Eye Shadow(74)</li>
+            </dl>
+            <dl><li>Lip Stick(57)</li></dl>
+            <dl><li>Foundation(44)</li></dl>
+             <dl><li>Lip Stain(21)</li></dl>
+             <dl><li>Eye Liner(18)</li></dl>
+             <dl><li>Eye Brows (23)</li></dl>
+             <dl> <li>Face Primer(8)</li></dl>
+             <dl> <li>Mascara(8)</li></dl>
+             <dl><li>Face Brushes(7)</li></dl>
+             <dl><li>Eye Brushes(6)</li></dl>
+             <dl> <li>Bronzer(5)</li></dl>
+             <dl><li>Blush(4)</li></dl>
+             <dl><li>Concealer(3)</li></dl>
+             <h3>More</h3>
+        </ul>
+      </div>
+    <div id="container3">
+        <h4 style="margin: auto;">FILTER BY</h4>
+        <lable class="selection">
+        <select name="sample" placeholder="Brand">
+        <option value="2">Brand</option>
+        <option value="3">Sephora Collection(157)</option>
+        <option value="4">MAKE UP FOR EVER(64)</option>
+        <option value="5">Smashbox(33)</option>
+        <option value="6">COVER FX(7)</option>
+        </select>
+    </lable>
+
+    <lable class="selection">
+        <select name="sample" placeholder="Brand">
+        <option value="2">Color</option>
+        <option value="3">Yellow</option>
+        <option value="4">Pink</option>
+        <option value="5">Black</option>
+        <option value="6">Blue, voilet , purpell, navy blue</option>
+        </select>
+    </lable>
+
+    <lable class="selection">
+        <select name="sample" placeholder="Brand">
+        <option value="2">size</option>
+        <option value="3">1.2 Gm(58)</option>
+        <option value="4">0.6 Gm(1)</option>
+        <option value="5">10 ML(3)</option>
+        <option value="6">COVER FX(7), 0.25 Gm(1) ,1.2 Gm(58)</option>
+        </select>
+    </lable>
+
+    <lable class="selection">
+        <select name="sample" placeholder="Brand">
+        <option value="2">Price</option>
+        <option value="3"><ul>
+            <li>
+                Below Rs.999(122)
+            </li>
+        </ul>Rs.1500 - Rs.1999(43)
+    </option>
+        <option value="4">Rs.1500 - Rs.1999(43)</option>
+        <option value="5">Rs.2000 - Rs.2999(72)
+        </option>
+        <option value="6">Above Rs.3000(50)</option>
+        </select>
+    </lable>
+
+    <lable class="selection">
+        <select name="sample" placeholder="Brand">
+        <option value="2">Store</option>
+        <option value="3">Sephora Collection(157)</option>
+        <option value="4">MAKE UP FOR EVER(64)</option>
+        <option value="5">Smashbox(33)</option>
+        <option value="6">COVER FX(7)</option>
+        </select>
+    </lable>
+    <button><h5>Apply</h5></button>
+    </div>
+
+    <div id="shorting">
+        <h1>Sort</h1>
+        
+        <select class="sort">
+                <option>Makeup</option>
+                <option>Skincare</option>
+                <option>Fragnance</option>
+                <option>Haircare</option>
+                <option>Tools and Brush</option>
+                <option>Brands</option>
+      </select>
+    
+        </div>
+
+</body>
+</html>
+<script>
+    var datajustarrived = [
+{ 
+    image: "https://cdn06.nnnow.com/web-images/medium/styles/MWMVLMAOP67/1605089862026/1.jpg",
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i>,
+    productname: "BENEFIT COSMETICS",
+    productdiscription: "BADgal Bang Volumizing Mascara Mini- Black" ,
+    price: "Rs. 1,240",
+    additionaloffer: "3 more offers",
+},
+{ 
+    image: "https://cdn13.nnnow.com/web-images/medium/styles/FXT59MNF6NW/1605088758122/1.jpg" ,
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "BENEFIT COSMETICS" ,
+    productdiscription:  "The Porefessionaal Peral Primer illumaniting Face Primer" ,
+    price: "Rs. 3,300",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn14.nnnow.com/web-images/medium/styles/E5LHWCKCK3S/1539589327450/1.jpg",
+    offer:"OFFER",
+    // icon : <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Cream lip Stain - 84 Rose Redux" ,
+    price: "Rs. 1,220" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn01.nnnow.com/web-images/medium/styles/KIJW8L47V8Z/1605089041681/1.jpg" ,
+    offer: "OFFER",
+    // icon: <i class="fa-solid fa-badge-percent"></i> ,
+    productname: "BENEFIT COSMETICS" ,
+    productdiscription: "BADgal Bang Volumizing Mascara Black" ,
+    price: "Rs. 2,510",
+    additionaloffer : "3 more offers" ,
+},
+
+{ 
+    image: "https://cdn10.nnnow.com/web-images/medium/styles/JDV714RL1OH/1539586268872/1.jpg",
+    offer: "OFFER" ,
+    // <!-- icon:  <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHOPRA COLLECTION" ,
+    productdiscription: "Color Hit Nail Polish - L178 Rose Bouquet",
+    price: "Rs. 440",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn05.nnnow.com/web-images/medium/styles/V21Z2LOB7HR/1533204761626/1.jpg",
+    offer: "OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i> , -->
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Beauty Amplifer Smothing Primer",
+    price: "Rs 1,320",
+    additionaloffer: "3 more offers" ,
+},
+
+{ 
+    image: "https://cdn00.nnnow.com/web-images/medium/styles/U6377AB0699/1539593212544/1.jpg",
+    offer: "OFFER",
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHORA COLLECTION",
+    productdiscription: "CREAM Lip Stain - 97 red Desert",
+    price: "Rs. 1,220" ,
+    additionaloffer: "3 more offers" ,
+},
+
+{ 
+    image: "https://cdn19.nnnow.com/web-images/medium/styles/2PXZRRLJAKQ/1605088422828/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "BENEFIT COSMETICS",
+    productdiscription: "The Porefessionaal Face Primer",
+    price: "Rs, 1240 - Rs. 3,300",
+    additionaloffer: "3 more offers",
+},
+{ 
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/LF9B8BFLIIQ/1519382076017/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Cream Lips - 41 Vintage Rosewood",
+    price: "Rs, 1,220",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn06.nnnow.com/web-images/medium/styles/MWMVLMAOP67/1605089862026/1.jpg",
+    offer: "OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "BENEFIT COLLECTION" ,
+    productdiscription: "BADgal Bangl Volumizing Mini - Black",
+    price: "Rs. 1,240" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn07.nnnow.com/web-images/medium/styles/XIFN4DSF1J7/1559120900591/1.jpg" ,
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "ANASTASIA BEVERLY HILLS" ,
+    productdiscription: "DIPBROW Pomade - Dark Brown" ,
+    price: "Rs. 2,280",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn07.nnnow.com/web-images/medium/styles/2GNXC3A5NLK/1588145568024/1.jpg",
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "BENEFIT COSMETICS" ,
+    productdiscription: "Dandelion Twinkle Powder Highlighter",
+    price: "Rs. 1,699",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn10.nnnow.com/web-images/medium/styles/3UEG2MOM9WJ/1567658710108/1.jpg",
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY",
+    productdiscription: "The New Eyeshadow Palette" ,
+    price: "Rs. 5,375",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn01.nnnow.com/web-images/medium/styles/HL30HBWJ5C7/1610447773879/1.jpg",
+    offer:"OFFER ",
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "BENEFIT COSMETICS",
+    productdiscription: "Roller Liner Matte Liquid Eyeliner - Black",
+    price:"Rs. 2,190",
+    additionaloffer: "3 more offers",
+},
+
+ { 
+    image: "https://cdn17.nnnow.com/web-images/medium/styles/9CAW879P336/1567571858068/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY",
+    productdiscription: "Easy Bake Loose Powder Foundation - Banana bread",
+    price: "Rs. 2,955",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn08.nnnow.com/web-images/medium/styles/2MDPNVHRIUF/1495709963378/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "CLINIQUE",
+    productdiscription: "Even Better Makeup SPF 15 - CN 52",
+    price: "Rs. 2,900" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image:"https://cdn15.nnnow.com/web-images/medium/styles/G80RER5PPS3/1631790635720/1.jpg" ,
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY",
+    productdiscription: "Dandelion Twinkle Powder Highlighter",
+    price: "Rs. 3,300" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image:"https://cdn15.nnnow.com/web-images/medium/styles/YI7Z61K5ZJ0/1551250957258/1.jpg" ,
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHOPRA COLLECTION" ,
+    productdiscription: "Matt Performance Powder Foundation - 25 Beige",
+    price:"Rs. 1,500" ,
+    additionaloffer: "3 more offers",
+},
+
+
+{ 
+    image:" https://cdn07.nnnow.com/web-images/medium/styles/2GSXJYR4T7Q/1631786779917/1.jpg" ,
+    offer:"OFFER ",
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY" ,
+    productdiscription: "Gloo Wish by Hude Buatey Multidew Skin",
+    price:"Rs. 3,250" ,
+    additionaloffer: "3 more offers",
+},
+
+
+{ 
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/0YIXKUOR7B4/1585910792322/1.jpg",
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname:" CLINIQUE",
+    productdiscription: "Even Better REfersh Hydrating And Reparing",
+    price: "Rs. 3,234",
+    additionaloffer:" 3 more offers",
+},
+
+
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/CHFYZVTDDRV/1614240117954/1.jpg" ,
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY" ,
+    productdiscription: "Liquid Matte Lip Stick - Trophy WIfe",
+    price: "Rs. 1,825" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/1MJW5GY2Y4G/1533204028618/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "#Lipstories Lip Stick - 31 Golden Gate",
+    price: "Rs, 850",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn03.nnnow.com/web-images/medium/styles/GOP1YXWVZPO/1555307201332/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SEPHOPRA COLLECTION",
+    productdiscription: "Rouge lacqure lip Stick - Rise Above",
+    price: "Rs. 1,220" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn19.nnnow.com/web-images/medium/styles/A9YSSVLYMM5/1567765427426/1.jpg",
+    offer:"OFFER" ,
+    // <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "HUDA BEAUTY" ,
+    productdiscription:"Powder Bullet Matte Lip Stick - third Date" ,
+    price:"Rs. 1,993" ,
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image: "https://cdn18.nnnow.com/web-images/medium/styles/0LKXWDQPJQV/1533203888858/1.jpg" ,
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname:"SHEPHORA COLLECTION" ,
+    productdiscription:"#Liostories Lip Stick - 03 Oui!" ,
+    price: "Rs. 850",
+    additionaloffer:" 3 more offers",
+},
+
+{ 
+    image:" https://cdn10.nnnow.com/web-images/medium/styles/NHQO3R3X9M3/1533203888871/1.jpg",
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SHEPHORA COLLECTION",
+    productdiscription: "#Lipstories Lip Stick - 09 Labyimth City",
+    price: "Rs. 850",
+    additionaloffer: "3 more offers",
+},
+
+{ 
+    image:" https://cdn16.nnnow.com/web-images/medium/styles/T3UI2BO0UZ1/1617865862275/1.jpg",
+    offer:"OFFER" ,
+    // <!-- icon: <i class="fa-solid fa-badge-percent"></i>, -->
+    productname: "SHEPHORA COLLECTION" ,
+    productdiscription:" Rouge Matte lip Stick = 03 No Superstar",
+    price:" Rs. 1,220",
+    additionaloffer: "3 more offers",
+}
+];
+ var cartData = JSON.parse(localStorage.getItem("cart")) || []
+datajustarrived.map(function(elem){
+
+    var box1 = document.createElement("div");
+    var mainBox =document.createElement("div");
+   mainBox.className="cont"
+   var img = document.createElement("img");
+   img.src=elem.image;
+   img.className="gridImage";
+   var overlayBox = document.createElement("div");
+   overlayBox.className="overlay";
+   var btnBox =document.createElement("div");
+   btnBox.className ="addCart";
+
+   var btn=document.createElement("button");
+   btn.innerText="AddToCArt";
+   btn.className="addBtn";
+   btn.addEventListener("click",function(){
+     addtocart(elem);
+   });
+   btnBox.append(btn);
+   overlayBox.append(btnBox);
+   
+    mainBox.append(img,overlayBox);
+
+ 
+    // var icon = document.createElement("img");
+    // offer.src=elem.icon
+   
+    var offer = document.createElement("h4");
+    offer.textContent = elem.offer;
+    offer.className = "gridOffer"
+   
+    var productname = document.createElement("h5");
+    productname.textContent = elem.productname;
+    productname.className = "gridProductname"
+   
+    var productdiscription = document.createElement("p");
+    productdiscription.textContent = elem.productdiscription;
+    productdiscription.className = "gridProductDis"
+   
+    var price = document.createElement("p");
+    price.textContent = elem.price;
+    price.className = "gridPrice"
+   
+    var additionaloffer = document.createElement("p");
+    additionaloffer.textContent = elem.additionaloffer;
+    additionaloffer.className = "gridAddOffer"
+
+    box1.append( mainBox, offer, productname, productdiscription, price, additionaloffer );
+    document.querySelector("#container1").append(box1);
+});
+
+function addtocart(elem){
+    console.log(elem);
+    cartData.push(elem);
+localStorage.setItem("cart",JSON.stringify(cartData));
+}
+/* Video Explanatio - https://youtu.be/-0VuZEYIYuI */
+document.querySelectorAll('.selection').forEach(setupSelector);
+
+function setupSelector(selector) {
+  selector.addEventListener('change', e => {
+    console.log('changed', e.target.value)
+  })
+
+  selector.addEventListener('mousedown', e => {
+    if(window.innerWidth >= 420) {// override look for non mobile
+      e.preventDefault();
+
+      const select = selector.children[0];
+      const dropDown = document.createElement('ul');
+      dropDown.className = "selector-options";
+
+      [...select.children].forEach(option => {
+        const dropDownOption = document.createElement('li');
+        dropDownOption.textContent = option.textContent;
+
+        dropDownOption.addEventListener('mousedown', (e) => {
+          e.stopPropagation();
+          select.value = option.value;
+          selector.value = option.value;
+          select.dispatchEvent(new Event('change'));
+          selector.dispatchEvent(new Event('change'));
+          dropDown.remove();
+        });
+
+        dropDown.appendChild(dropDownOption);   
+      });
+
+      selector.appendChild(dropDown);
+
+      // handle click out
+      document.addEventListener('click', (e) => {
+        if(!selector.contains(e.target)) {
+          dropDown.remove();
+        }
+      });
+    }
+  });
+}
+</script>
