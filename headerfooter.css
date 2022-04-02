@@ -494,5 +494,29 @@ br{
 #lastbutton>button>i{
   padding: 9px;
 }
+/* hover work-------------- */
+#storelocator:hover{
+ cursor: pointer;
+}
+
+#checkoutText:hover{
+ cursor: pointer;
+}
+
+#getapp:hover{
+ cursor: pointer;
+}
+#trackorder:hover{
+ cursor: pointer;
+}
+#loyalty:hover{
+ cursor: pointer;
+}
+#sephora:hover{
+ cursor: pointer;
+}
+#login:hover{
+ cursor: pointer;
+}
 
 
