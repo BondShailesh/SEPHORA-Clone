@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data base</h1>
+    <form>
+        <input id="a" type="text" placeholder="enter image link"/>
+        <input id="b" type="text" placeholder="offer"/>
+        <input id="g" type="text" placeholder="icon link" />
+        <input id="c" type="text" placeholder="product name"/>
+        <input id="d" type="text" placeholder="product discription"/>
+        <input id="e" type="text" placeholder="price"/>
+        <input id="f" type="text" placeholder="additional offer"/>
+        <input  type="submit" />
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", datastore);
+    var alldata = JSON.parse(localStorage.getItem("Sephoradata"))||[]
+    function datastore(){
+        event.preventDefault();
+
+        var dataobj ={
+            image: document.querySelector("#a").value,
+            offer: document.querySelector("#b").value ,
+            icon: document.querySelector("#g").value,
+            productname: document.querySelector("#c").value,
+            productdiscription: document.querySelector("#d").value,
+            price: document.querySelector("#e").value,
+            additionaloffer: document.querySelector("#f").value,
+         }
+        //  console.log( dataobj);
+        alldata.push(dataobj);
+        // console.log(alldata);
+       localStorage.setItem("Sephoradata",JSON.stringify(alldata))
+    }
+
+</script>
