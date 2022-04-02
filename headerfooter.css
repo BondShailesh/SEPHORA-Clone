@@ -65,7 +65,7 @@ p{
 
 #middlecontainer{
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
 }
@@ -103,6 +103,7 @@ br{
   width: 75%;
   height: 65px;
   margin: auto;
+  padding: auto;
 }
 /* Header CSS is done */
 /* #mainbodypart{
@@ -493,6 +494,29 @@ br{
 #lastbutton>button>i{
   padding: 9px;
 }
+/* hover work-------------- */
+#storelocator:hover{
+ cursor: pointer;
+}
 
+#checkoutText:hover{
+ cursor: pointer;
+}
+
+#getapp:hover{
+ cursor: pointer;
+}
+#trackorder:hover{
+ cursor: pointer;
+}
+#loyalty:hover{
+ cursor: pointer;
+}
+#sephora:hover{
+ cursor: pointer;
+}
+#login:hover{
+ cursor: pointer;
+}
 
 
