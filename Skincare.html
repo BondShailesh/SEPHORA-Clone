@@ -1,14 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Manish</h1>
-    
+    <style>
+      *body {
+        width: 80%;
+        /* border: 2px solid red */
+      }
+      .btn {
+        display: block;
+        /* display: none; */
+      }
+      .hide {
+        display: none;
+      }
+      .list {
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #container {
+        height: auto;
+        width: auto;
+        /* border: 2px solid red; */
+        display: flex;
+      }
+      #container > div {
+        /* border: 2px solid rebeccapurple; */
+        height: auto;
+        width: auto;
+        /* margin: auto; */
+      }
+
+      .btn {
+        list-style-type: none;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -10px;
+        border: none;
+        background-color: white;
+        padding: 10px;
+        cursor: pointer;
+        color: black;
+      }
+      .inside-list {
+        list-style-type: none;
+        /* font-weight: 400; */
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -14px;
+        margin-top: -12px;
+      }
+      .left-div-shop {
+        margin-top: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        display: block;
+      }
+      .ancher {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(41, 40, 40);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .fullBox {
+        margin: 32px, 0, 0;
+        display: flex;
+      }
+      #firstImg {
+        /* width: 80%; */
+      }
+      #firstImg > a > img {
+        width: 100%;
+        height: 295px;
+        object-fit: contain;
+      }
+      #left-wala-box {
+        /* border: 2px solid */
+        /* black; */
+        width: auto;
+        height: auto;
+      }
+      #rigth-wala-box {
+        width: 60%;
+        /* border: 2px solid red; */
+        height: auto;
+      }
+      #outer {
+        width: 70%;
+        /* border: 2px solid blue; */
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- copy whole HTML/CSS AND SCRIPT and change all the name of the list only don't change anything (ID,CLASS ,SCRIPT DON'T CHANGE)-->
+
+    <div id="outer">
+      <div id="firstImg">
+        <a
+          href="https://sephora.nnnow.com/makeup-products?priority=TXG4I0R2LRH--5SKH2OSOYXJ--L5SEVSH4WKH--05FS3K01TZR--VAX60VQ7U6C"
+          ><img
+            src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/MakeupDesktop.jpg"
+            alt=""
+        /></a>
+      </div>
+      <div class="fullBox">
+        <div id="left-wala-box">
+          <div class="left-div-shop"><h3>Shop</h3></div>
+          <button class="btn" onclick="mosis()">MOSISTURIZERS</button>
+          <div id="Mosis" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
+              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
+              <li class="list"><a class="ancher" href="">Face Oils </a></li>
+              <li class="list">
+                <a class="ancher" href="">Mists & Essences </a>
+              </li>
+              <li class="list">
+                <a class="ancher" href=""> BB & CC Creams</a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
+            </ul>
+          </div>
+
+          <button class="btn" onclick="clean()">CLEANSERS</button>
+          <div id="clean" class="hide">
+            <ul class="inside-list">
+              <li class="list">
+                <a class="ancher" href=""> Face Wash & Cleansers</a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Exfoliators</a></li>
+              <li class="list">
+                <a class="ancher" href="">Makeup Removers </a>
+              </li>
+              <li class="list"><a class="ancher" href="">Face Wipes </a></li>
+              <li class="list"><a class="ancher" href=""> Toners</a></li>
+              <li class="list">
+                <a class="ancher" href=""> Blotting Papers</a>
+              </li>
+              <li class="list">
+                <a class="ancher" href=""> Hand Sanitizers</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn" onclick="treat()">
+            TREATMENTS & HIGHTECH TOOLS
+          </button>
+          <div id="treat" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Face Serums</a></li>
+              <li class="list">
+                <a class="ancher" href=""> Cleansing Tools</a>
+              </li>
+              <li class="list">
+                <a class="ancher" href="">Anti-Aging Tools </a>
+              </li>
+              <li class="list"><a class="ancher" href="">Face Masks </a></li>
+              <li class="list">
+                <a class="ancher" href=""> Eye Cream & Treatments</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn" onclick="mask()">MASKS</button>
+          <div id="mask" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Face Masks</a></li>
+              <li class="list"><a class="ancher" href="">Sheet Masks</a></li>
+              <li class="list"><a class="ancher" href="">Eye Masks </a></li>
+              <li class="list">
+                <a class="ancher" href="">Nose Masks & Strips </a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Lip Masks</a></li>
+              <li class="list"><a class="ancher" href=""> Hair Masks</a></li>
+              <li class="list"><a class="ancher" href=""> Foot Masks</a></li>
+            </ul>
+          </div>
+          <button class="btn" onclick="bath()">BATH & SHOWER</button>
+          <div id="bath" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
+              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
+              <li class="list"><a class="ancher" href="">Face Oils </a></li>
+              <li class="list">
+                <a class="ancher" href="">Mists & Essences </a>
+              </li>
+              <li class="list">
+                <a class="ancher" href=""> BB & CC Creams</a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
+            </ul>
+          </div>
+          <button class="btn" onclick="bodyM()">BODY MOISTURIZERS</button>
+          <div id="bodyM" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
+              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
+              <li class="list"><a class="ancher" href="">Face Oils </a></li>
+              <li class="list">
+                <a class="ancher" href="">Mists & Essences </a>
+              </li>
+              <li class="list">
+                <a class="ancher" href=""> BB & CC Creams</a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
+            </ul>
+          </div>
+          <button class="btn" onclick="vegan()">VEGAN</button>
+          <div id="vegan" class="hide">
+            <ul class="inside-list">
+              <li class="list"><a class="ancher" href=""> Moisturizers</a></li>
+              <li class="list"><a class="ancher" href=""> Night Creams</a></li>
+              <li class="list"><a class="ancher" href="">Face Oils </a></li>
+              <li class="list">
+                <a class="ancher" href="">Mists & Essences </a>
+              </li>
+              <li class="list">
+                <a class="ancher" href=""> BB & CC Creams</a>
+              </li>
+              <li class="list"><a class="ancher" href=""> Sunscreen</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="rigth-wala-box"></div>
+      </div>
     </div>
-</body>
+  <script>
+    function mosis() {
+      let x = document.getElementById("Mosis");
+      x.style.color = "red";
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function clean() {
+      let x = document.getElementById("clean");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function treat() {
+      let x = document.getElementById("treat");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function mask() {
+      let x = document.getElementById("mask");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function bath() {
+      let x = document.getElementById("bath");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function bodyM() {
+      let x = document.getElementById("bodyM");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  
+    function vegan() {
+      let x = document.getElementById("vegan");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+  </body>
 </html>
