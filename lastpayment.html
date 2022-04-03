@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label>
+        <input id="name" type="text">
+        <br>
+        <label  for="">CArd Number</label>
+        <input id="card" type="Number">
+        <br>
+        <label  for="">CVV</label>
+        <input id="cvv" type="Number">
+        <br>
+        <label  for="">Expiry date</label>
+        <input id="exp" type="Number">
+        <br>
+        <input id="button" type="submit">
+    </form>
+</body>
+</html>
+<script>
+    
+document.querySelector("#button").addEventListener("click", funpaym);
+
+
+function funpaym(){
+var name = document.querySelector("#name").value
+var card = document.querySelector("#card").value;
+var cvv = document.querySelector("#cvv").value;
+var exp = document.querySelector("#exp").value;
+    event.preventDefault();
+ 
+ 
+
+
+ 
+      alert("Congratulation Your order has been succesfully placed")
+  
+}
+
+
+
+
+</script>

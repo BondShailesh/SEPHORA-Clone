@@ -43,6 +43,12 @@
             margin-top: 20px;
            
         }
+        .gridImage{
+         display: block;
+         width: 100%;
+         height: auto;
+         margin: auto;
+      }
     #container3{
         /* border: 1px solid black; */
             height: 500px;
@@ -185,7 +191,12 @@
          transition: .5s ease;
       }
       .cont:hover .overlay{
-         height:20%;
+         height:35%;
+      }
+      .addCart{
+        height: 100px;
+        width: 100px;
+        margin: auto;
       }
 
     </style>
@@ -799,10 +810,19 @@
       </select>
     
         </div>
+<button id="bagwala">Go To Bag</button>
 
 </body>
 </html>
 <script>
+document.querySelector("#bagwala").addEventListener("click",bagful)
+function bagful(){
+  window.location.href="cart.html"
+  console.log("inde");
+}
+
+
+
     var datajustarrived = [
 { 
     image: "https://cdn06.nnnow.com/web-images/medium/styles/MWMVLMAOP67/1605089862026/1.jpg",

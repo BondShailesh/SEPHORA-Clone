@@ -9,7 +9,10 @@
         #container2{
             /* border: 1px solid black; */
             width: 100%;
-            height: 200px;
+            height: 150px;
+            margin: auto;
+            grid-template-columns: repeat(1,20%);
+            grid-template-rows: auto;
         }
         .gridPrice{
          font-weight: bold;
@@ -47,25 +50,55 @@
          width: 25%;
          height: 150px;
       }
+        h2{
+            margin-left: 50px;
+            color: brown;
+            font-weight: 23px;
+            margin-bottom: 20px;
+        }
+        button{
+            /* height: 60px;
+            width: 150px; */
+            background-color: orange;
+            
+
+        }
+        .totalPrice{
+            display: block;
+            margin-left: 350px;
+        }
+        #fullScreen{
+            display: inline-table;
+        }
     </style>
 </head>
 <body>
     <button><a href="viewall.html"></a></button>
-    <div id="container2"></div>
+    <div id="fullScreen"><div id="container2"></div>
+    <div class="totalPrice">
+        <h2></h2>
+    <button id="lastpayment">Proceed to complete order</button>
+    </div></div>
+    <button id="fgffghjg">Go to bag</button>
 </body>
 </html>
 <script>
-    var cartData = JSON.parse(localStorage.getItem("COMMONLOCALSTORAGE"))
+document.querySelector("#fgffghjg").addEventListener("click",qwerty)
+function qwerty(){
+    window.location.href="topicon/bag.html"
+}
+
+
+
+    var cartData = JSON.parse(localStorage.getItem("COMMONLOCALSTORAGE"));
     // console.log(cartData);
-  var totalcart = cartData.reduce(function(sum,elem){
-      return sum + (elem.price)
+  var totalcart = cartData.reduce(function(sum,elem,index,arr){
+      return sum +Number(elem.price)
 
   },0)
-  var h2 = document.createElement("h2")
-    h2.innerText = `Your total bill is ${totalcart}`
-//   var length = cartData.length;
-//   console.log(length);
-  console.log(totalcart)
+  console.log(totalcart);
+  var abhi = document.querySelector("h2").innerText= totalcart
+
 
     
     cartData.map(function (elem){
@@ -103,6 +136,7 @@
 
     box.append(img , offer, productname, productdiscription, price, additionaloffer );
     document.querySelector("#container2").append(box);
+
 });
 
 function removeItem(elem, index) {
@@ -112,4 +146,13 @@ function removeItem(elem, index) {
     localStorage.setItem("cart", JSON.stringify(cartData));
     window.location.reload();
   }
+
+  document.querySelector("#lastpayment").addEventListener("click", lastpayment);
+
+  function lastpayment (){
+ window.location.href="lastpayment.html";
+ 
+  }
 </script>
+<script src="lastpayment.html"></script>
+<script src="topicon/bag.html"></script>
