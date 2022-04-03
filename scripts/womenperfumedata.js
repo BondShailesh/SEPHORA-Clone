@@ -272,3 +272,13 @@ data.map(function (elem){
     document.querySelector("#container").append(box);
 });
 
+function filterbrand(){
+
+  
+    var selected=document.querySelector("#filterbrand").value
+    var brand =data(function(elem){
+        
+        return selected == elem.brand
+    })
+    displayitem(brand)
+}

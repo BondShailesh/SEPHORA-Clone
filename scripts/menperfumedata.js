@@ -1,9 +1,4 @@
 var mendata=[
-    {
-        img:"https://cdn17.nnnow.com/web-images/preview/styles/OI4HY9Z6FTS/1604554570148/3.jpg",
-        brand:"Issey Miyake",
-        price:4725,
-        description:"L'Eau Super Majeure D'Issey Eau De Toilette"},
 
         {
             img:"https://cdn12.nnnow.com/web-images/preview/styles/V1Q5H9E07BM/1604476359412/2.jpg",
@@ -16,6 +11,12 @@ var mendata=[
                 brand:"Issey Miyake",
                 price:4000,
                 description:"Boss The Scent Private Accord For Him Eau De Toilette"},
+                {
+                    img:"https://cdn17.nnnow.com/web-images/preview/styles/OI4HY9Z6FTS/1604554570148/3.jpg",
+                    brand:"Issey Miyake",
+                    price:4725,
+                    description:"L'Eau Super Majeure D'Issey Eau De Toilette"},
+            
 
 {
 img:"https://cdn03.nnnow.com/web-images/preview/styles/E2HC1OHQZFP/1604487744534/2.jpg",
@@ -85,7 +86,7 @@ description:"Boss Bottled Night Eau De Toilette"},
     img:"https://cdn07.nnnow.com/web-images/preview/styles/ALVMEWKNHGM/1495712465916/1.jpg",
     brand:"GUERLAIN",
     price:9650,
-    description: "Live Irresistible Eau De ParfumGivenchy Live Irresistible Eau De ParfumGivenchy Live Irresistible Eau De Parfum",
+    description: "xLive Irresistible Eau De Parfum",
 },
 {
     img:"https://cdn14.nnnow.com/web-images/preview/styles/STJX5BCPY3Y/1553169800941/1.jpg",
@@ -187,6 +188,6 @@ mendata.map(function (elem){
     promotion.textContent = elem.promotion;
     promotion.setAttribute("class", "promotion")
     
-    box.append(img,brand,description,price,promotion);
+    box.append(img,brand,description,price,);
     document.querySelector("#container").append(box);
 });
