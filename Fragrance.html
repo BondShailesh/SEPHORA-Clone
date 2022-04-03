@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1
     , initial-scale=1.0">
-    <title>Document</title>
+    <title>Women-Perfume</title>
     <style>
 
         .img{
-            width: 250px;
-            margin-left: 18px;
+            width: 200px;
+            margin-left: 44px;
+            margin-top: 50px;
         }
         #container {
         display: grid;
@@ -39,6 +40,10 @@
           margin-right: 200px;
           width: auto;
           font-size: 70%;
+      }
+      #sortBy{
+          margin-left: 80%;
+          margin-top: 30px;
       }
 
 
@@ -89,6 +94,17 @@
    
 </head>
 <body>
+    <div id="sortBy">
+        <label> <b> SORT :</b> </label>
+        <select id="sort" onchange="numsort()">
+            <option value="">Popularity</option>
+        
+            <option value="high">Price - High to Low</option>
+            <option value="low">Price - Low to High</option>
+        </select>
+    </div>
+
+
 
     <div id="container">
         <div class="perfume-filter">
@@ -98,7 +114,7 @@
                 <h4>FILTER BY</h4>
 
                <div class="jay">
-                <select name="" id="filterbrand" onchange="filterByBrands()">
+                <select name="" id="filterbrand" onchange="filterbrands()">
                     <option value="BRANDS">BRANDS</option>
                     
                     <option value="KAYALI">KAYALI</option>
@@ -158,6 +174,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- ----------------------MenData---------------------------------- -->
