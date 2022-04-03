@@ -1,12 +1,778 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- copy start -->
+    <link rel="stylesheet" href="headerfooter.css">
+    <script src="https://kit.fontawesome.com/37cdf01d4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="hamber/index.css">
+    <link rel="stylesheet" href="hover/hover.css">
+    <link rel="stylesheet" href="curosuel/curousel.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+    <style>
+        #loginBtn {
+            border: none;
+            background-color: hotpink;
+            color: white;
+        }
+
+        *body {
+            width: 80%;
+            /* border: 2px solid red */
+        }
+
+        .btn {
+            display: block;
+            /* display: none; */
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .list {
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            display: flex;
+        }
+
+        #container>div {
+            /* border: 2px solid rebeccapurple; */
+            height: auto;
+            width: auto;
+            /* margin: auto; */
+        }
+
+        .btn {
+            list-style-type: none;
+            font-weight: 400;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            margin-left: -10px;
+            border: none;
+            background-color: white;
+            padding: 10px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .inside-list {
+            list-style-type: none;
+            /* font-weight: 400; */
+            /* font-family: Arial, Helvetica, sans-serif; */
+            margin-left: -14px;
+            margin-top: -12px;
+        }
+
+        .left-div-shop {
+            margin-top: 16px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-size: 12px;
+            display: block;
+        }
+
+        .ancher {
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(41, 40, 40);
+            /* font-family: Arial, Helvetica, sans-serif; */
+        }
+
+        .fullBox {
+            margin-top: 40px;
+            margin: 32px, 0, 0;
+            display: flex;
+        }
+
+        #firstImg {
+            /* width: 100%; */
+            padding-top: 15px;
+            width: auto;
+        }
+
+        #firstImg>a>img {
+            width: 100%;
+            height: 300px;
+            /* object-fit: contain; */
+        }
+
+        #left-wala-box {
+            /* border: 2px solid */
+            /* black; */
+            width: auto;
+            height: auto;
+        }
+
+        #rigth-wala-box {
+            width: 70%;
+            /* border: 2px solid red; */
+            height: auto;
+        }
+
+        #outer {
+            width: 85%;
+            /* border: 2px solid blue; */
+            margin: auto;
+        }
+
+        .just-arrived-image {
+            width: 900px;
+            height: 69px;
+            /* margin-left: 50px; */
+        }
+
+        .just-bestseller-image {
+            width: 900px;
+            height: 69px;
+            /* margin-left: 50px; */
+        }
+
+        .just-hairstyling-image {
+            width: 900px;
+            height: 69px;
+            /* margin-left: 50px; */
+        }
+
+        .just-datashampooconditioner-image {
+            width: 900px;
+            height: 69px;
+            /* margin-left: 50px; */
+        }
+
+        .just-arrived-outer {
+            display: grid;
+            grid-template-rows: repeat(1, 500px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+            /* margin-left: 40px; */
+
+        }
+
+        .just-bestseller-outer {
+            display: grid;
+            grid-template-rows: repeat(1, 500px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+            /* margin-left: 40px; */
+
+        }
+
+        .just-hairstyling-outer {
+            display: grid;
+            grid-template-rows: repeat(1, 500px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+            /* margin-left: 40px; */
+
+        }
+
+        .just-datashampooconditioner-outer {
+            display: grid;
+            grid-template-rows: repeat(1, 500px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+            /* margin-left: 40px; */
+
+        }
+
+
+
+        .viewAll {
+            text-align: right;
+        }
+
+        .gridImage {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .gridPara {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gridOffer {
+            color: red;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .gridProductname {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+
+        .gridProductDis {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gridPrice {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+
+        }
+
+        .gridAddOffer {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+
+        }
+
+        /* overlaywrk */
+        .cont {
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .cont:hover .overlay {
+            height: 20%;
+        }
+
+        .addBtn {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+
+        C:\Users\asus\OneDrive\Desktop\myProject\SEPHORA-Clone\skincare2.html
+    </style>
+
 </head>
+
 <body>
-    <h1>Abhishek Singh</h1>
+    <!-- bodyStart  -->
+
+
+    <!-- copy whole HTML/CSS AND SCRIPT and change all the name of the list only don't change anything (ID,CLASS ,SCRIPT DON'T CHANGE)-->
+
+    <div id="outer" class="container">
+        <div id="firstImg">
+            <a
+                href="https://sephora.nnnow.com/makeup-products?priority=TXG4I0R2LRH--5SKH2OSOYXJ--L5SEVSH4WKH--05FS3K01TZR--VAX60VQ7U6C"><img
+                    src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/HaircareDesktop.jpg"
+                    alt="" /></a>
+        </div>
+        <div class="fullBox">
+            <div id="left-wala-box">
+                <div class="left-div-shop">
+                    <h3>Shop</h3>
+                </div>
+                <button class="btn" onclick="mosis()">SHAMPOO & CONDITIONER</button>
+                <div id="Mosis" class="hide">
+                    <ul class="inside-list">
+                        <li class="list"><a class="ancher" href=""> Shampoo</a></li>
+                        <li class="list"><a class="ancher" href=""> Conditioner</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn" onclick="clean()">HAIR STYLING & TREATMENTS</button>
+                <div id="clean" class="hide">
+                    <ul class="inside-list">
+                        <li class="list">
+                            <a class="ancher" href=""> Hair Spray & Styling Products</a>
+                        </li>
+                        <li class="list"><a class="ancher" href=""> Hair Oil</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="rigth-wala-box">
+
+                <div><img class="just-arrived-image"
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/16-april-2020/makeup/13APR20_MAKEUP_CB_STRIP1_DESK_1.jpg"
+                        alt=""></div>
+
+
+                <div>
+                    <p class="viewAll">VIEW ALL</p>
+                </div>
+
+                <div class="just-arrived-outer">
+                    <!-- dataComingWithTheHelpOfJS  -->
+                </div>
+
+
+                <div><img class="just-bestseller-image"
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/22-april-2020/tom-ford-cat2/13APR20_HAIRCARE_CB_STRIP2_DESK_1.jpg"
+                        alt=""></div>
+
+                <div>
+                    <p class="viewAll">VIEW ALL</p>
+                </div>
+
+                <div class="just-bestseller-outer">
+                    <!-- dataComingWithTheHelpOfJS  -->
+                </div>
+
+
+                <div><img class="just-hairstyling-image"
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/16-april-2020/haircare/13APR20_HAIRCARE_CB_STRIP3_DESK.jpg"
+                        alt=""></div>
+
+
+                <div>
+                    <p class="viewAll">VIEW ALL</p>
+                </div>
+
+                <div class="just-hairstyling-outer">
+                    <!-- dataComingWithTheHelpOfJS  -->
+                </div>
+
+                <div><img class="just-datashampooconditioner-image"
+                        src="https://logan.nnnow.com/content/dam/nnnow-project/16-april-2020/haircare/13APR20_HAIRCARE_CB_STRIP4_DESK.jpg"
+                        alt=""></div>
+
+                <div>
+                    <p class="viewAll">VIEW ALL</p>
+                </div>
+
+                <div class="just-datashampooconditioner-outer">
+                    <!-- dataComingWithTheHelpOfJS  -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- bodyEnd  -->
+
+    <script>
+        function mosis() {
+            let x = document.getElementById("Mosis");
+            x.style.color = "red";
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function clean() {
+            let x = document.getElementById("clean");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var datajustarrived = [
+            {
+                image: "https://cdn09.nnnow.com/web-images/medium/styles/NAG35MWAZB5/1603956012732/1.jpg",
+                offer: "OFFER",
+                // icon: <i class="fa-solid fa-badge-percent"></i>,
+                productname: "OLAPLEX",
+                productdiscription: "N°4 Bond Maintenance Shampoo",
+                price: "Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+            {
+                image: "https://cdn00.nnnow.com/web-images/medium/styles/RB2GD0T4W14/1603859985717/1.jpg",
+                offer: "OFFER",
+                // icon: <i class="fa-solid fa-badge-percent"></i> ,
+                productname: "OLAPLEX",
+                productdiscription: "N°5 Bond Maintenance Conditioner",
+                price: "Rs. 1,550 - Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+
+            {
+                image: "https://cdn12.nnnow.com/web-images/medium/styles/SKSJOH1S5KM/1605594563751/1.jpg",
+                offer: "OFFER",
+                // icon : <i class="fa-solid fa-badge-percent"></i> ,
+                productname: "OLAPLEX",
+                productdiscription: "N°3 Hair Perfector Treatment",
+                price: "Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+
+            {
+                image: "https://cdn15.nnnow.com/web-images/medium/styles/KHFROVPTCI2/1599046960541/1.jpg",
+                offer: "OFFER",
+                // icon: <i class="fa-solid fa-badge-percent"></i> ,
+                productname: "OLAPLEX",
+                productdiscription: "No. 7 Bonding Oil",
+                price: "Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+        ];
+
+        datajustarrived.map(function (elem) {
+
+            var box1 = document.createElement("div");
+
+            var mainBox = document.createElement("div");
+            mainBox.className = "cont"
+            var img = document.createElement("img");
+            img.src = elem.image;
+            img.className = "gridImage";
+            var overlayBox = document.createElement("div");
+            overlayBox.className = "overlay";
+            var btnBox = document.createElement("div");
+            btnBox.className = "addCart";
+
+            var btn = document.createElement("button");
+            btn.innerText = "addToCArt";
+            btn.className = "addBtn";
+            btnBox.append(btn);
+            overlayBox.append(btnBox);
+
+            mainBox.append(img, overlayBox);
+
+            // var icon = document.createElement("img");
+            // offer.src=elem.icon
+
+            var offer = document.createElement("p");
+            offer.textContent = elem.offer;
+            offer.className = "gridOffer"
+
+            var productname = document.createElement("p");
+            productname.textContent = elem.productname;
+            productname.className = "gridProductname"
+
+            var productdiscription = document.createElement("p");
+            productdiscription.textContent = elem.productdiscription;
+            productdiscription.className = "gridProductDis"
+
+            var price = document.createElement("p");
+            price.textContent = elem.price;
+            price.className = "gridPrice"
+
+            var additionaloffer = document.createElement("p");
+            additionaloffer.textContent = elem.additionaloffer;
+            additionaloffer.className = "gridAddOffer"
+
+            box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer);
+            document.querySelector(".just-arrived-outer").append(box1);
+        });
+
+
+        var dataBestseller = [
+            {
+                image: "https://cdn00.nnnow.com/web-images/medium/styles/GHGEIUIHQ3G/1586865417820/1.jpg",
+                offer: "OFFER",
+                /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
+                productname: "AVEDA",
+                productdiscription: "Invati Advanced™ Thickening Conditioner",
+                price: "Rs. 750 - Rs. 2,850",
+                additionaloffer: "3 more offers"
+
+
+            },
+            {
+                image: "https://cdn11.nnnow.com/web-images/medium/styles/GSYDXLHZLUU/1580451959414/1.jpg",
+                offer: "OFFER",
+                /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
+                productname: "AVEDA",
+                productdiscription: "Nutriplenish™ Conditioner Deep Moisture",
+                price: "Rs. 750 - Rs. 2,850",
+                additionaloffer: "3 more offers"
+            },
+
+            {
+                image: "https://cdn17.nnnow.com/web-images/medium/styles/2A8YHU3CSEM/1586865417790/1.jpg",
+                offer: "OFFER",
+                /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
+                productname: "AVEDA",
+                productdiscription: "Thickening Tonic",
+                price: "Rs. 750 - Rs. 2,050",
+                additionaloffer: "3 more offers",
+            },
+
+            {
+                image: "https://cdn08.nnnow.com/web-images/medium/styles/ZXDKDH6NBRG/1586865417850/1.jpg",
+                offer: "OFFER",
+                /* <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, --> */
+                productname: "AVEDA",
+                productdiscription: "Cherry Almond Softening Conditioner",
+                price: "Rs. 1,750",
+                additionaloffer: "3 more offers",
+            }
+        ];
+        dataBestseller.map(function (elem) {
+
+            var box1 = document.createElement("div");
+
+            var mainBox = document.createElement("div");
+            mainBox.className = "cont"
+            var img = document.createElement("img");
+            img.src = elem.image;
+            img.className = "gridImage";
+            var overlayBox = document.createElement("div");
+            overlayBox.className = "overlay";
+            var btnBox = document.createElement("div");
+            btnBox.className = "addCart";
+
+            var btn = document.createElement("button");
+            btn.innerText = "addToCArt";
+            btn.className = "addBtn";
+            btnBox.append(btn);
+            overlayBox.append(btnBox);
+
+            mainBox.append(img, overlayBox);
+
+            // var icon = document.createElement("img");
+            // offer.src=elem.icon
+
+            var offer = document.createElement("p");
+            offer.textContent = elem.offer;
+            offer.className = "gridOffer"
+
+            var productname = document.createElement("p");
+            productname.textContent = elem.productname;
+            productname.className = "gridProductname"
+
+            var productdiscription = document.createElement("p");
+            productdiscription.textContent = elem.productdiscription;
+            productdiscription.className = "gridProductDis"
+
+            var price = document.createElement("p");
+            price.textContent = elem.price;
+            price.className = "gridPrice"
+
+            var additionaloffer = document.createElement("p");
+            additionaloffer.textContent = elem.additionaloffer;
+            additionaloffer.className = "gridAddOffer"
+
+            box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer);
+            document.querySelector(".just-bestseller-outer").append(box1);
+        });
+
+
+        var dataHairstyling = [
+            {
+                image: "https://cdn17.nnnow.com/web-images/medium/styles/PSY9GYLUMYU/1634887017760/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Texture Clay Hair Cream",
+                price: "Rs. 2,340",
+                additionaloffer: "3 more offers",
+            },
+
+            {
+                image: "https://cdn16.nnnow.com/web-images/medium/styles/WAI3ZKSEJLG/1634886167158/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Dry Shampoo Dark Tones Hair Spray",
+                price: "Rs. 2,160",
+                additionaloffer: "3 more offers",
+            },
+
+            {
+                image: "https://cdn02.nnnow.com/web-images/medium/styles/VJJNDGIRV6T/1634886962094/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Root Boost Hair Spray",
+                price: "Rs. 2,160",
+                additionaloffer: "3 more offers",
+            },
+
+            {
+                image: "https://cdn06.nnnow.com/web-images/medium/styles/H18EA2SCEQD/1634887143536/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Luminous Hairspray Medium",
+                price: "Rs. 2,160",
+                additionaloffer: "3 more offers",
+            }
+        ];
+
+        dataHairstyling.map(function (elem) {
+
+            var box1 = document.createElement("div");
+
+            var mainBox = document.createElement("div");
+            mainBox.className = "cont"
+            var img = document.createElement("img");
+            img.src = elem.image;
+            img.className = "gridImage";
+            var overlayBox = document.createElement("div");
+            overlayBox.className = "overlay";
+            var btnBox = document.createElement("div");
+            btnBox.className = "addCart";
+
+            var btn = document.createElement("button");
+            btn.innerText = "addToCArt";
+            btn.className = "addBtn";
+            btnBox.append(btn);
+            overlayBox.append(btnBox);
+
+            mainBox.append(img, overlayBox);
+
+            // var icon = document.createElement("img");
+            // offer.src=elem.icon
+
+            var offer = document.createElement("p");
+            offer.textContent = elem.offer;
+            offer.className = "gridOffer"
+
+            var productname = document.createElement("p");
+            productname.textContent = elem.productname;
+            productname.className = "gridProductname"
+
+            var productdiscription = document.createElement("p");
+            productdiscription.textContent = elem.productdiscription;
+            productdiscription.className = "gridProductDis"
+
+            var price = document.createElement("p");
+            price.textContent = elem.price;
+            price.className = "gridPrice"
+
+            var additionaloffer = document.createElement("p");
+            additionaloffer.textContent = elem.additionaloffer;
+            additionaloffer.className = "gridAddOffer"
+
+            box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer);
+            document.querySelector(".just-hairstyling-outer").append(box1);
+        });
+
+
+        var Datashampooconditioner = [
+            {
+                image: "https://cdn09.nnnow.com/web-images/medium/styles/NAG35MWAZB5/1603956012732/1.jpg",
+                offer: "OFFER",
+                // icon: <i class="fa-solid fa-badge-percent"></i>,
+                productname: "OLAPLEX",
+                productdiscription: "N°4 Bond Maintenance Shampoo",
+                price: "Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+
+            {
+                image: "https://cdn00.nnnow.com/web-images/medium/styles/RB2GD0T4W14/1603859985717/1.jpg",
+                offer: "OFFER",
+                // icon: <i class="fa-solid fa-badge-percent"></i> ,
+                productname: "OLAPLEX",
+                productdiscription: "N°5 Bond Maintenance Conditioner",
+                price: "Rs. 1,550 - Rs. 2,950",
+                additionaloffer: "Buy For 4500 and Get a Massage Ball and Gloves Free",
+            },
+
+            {
+                image: "https://cdn13.nnnow.com/web-images/medium/styles/7TU00OK7QSV/1634888036586/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Hydrating Shampoo",
+                price: "Rs. 900 - Rs. 2,160",
+                additionaloffer: "3 more offers",
+            },
+
+            {
+                image: "https://cdn13.nnnow.com/web-images/medium/styles/FCNE5T2TV5T/1634887143628/1.jpg",
+                offer: "OFFER",
+                //  <!-- // icon: <i class="fa-solid fa-badge-percent"></i>, -->
+                productname: "MOROCCANOIL",
+                productdiscription: "Moisture Repair Shampoo",
+                price: "Rs. 1,890",
+                additionaloffer: "3 more offers",
+            }
+        ];
+
+        Datashampooconditioner.map(function (elem) {
+
+            var box1 = document.createElement("div");
+
+            var mainBox = document.createElement("div");
+            mainBox.className = "cont"
+            var img = document.createElement("img");
+            img.src = elem.image;
+            img.className = "gridImage";
+            var overlayBox = document.createElement("div");
+            overlayBox.className = "overlay";
+            var btnBox = document.createElement("div");
+            btnBox.className = "addCart";
+
+            var btn = document.createElement("button");
+            btn.innerText = "addToCArt";
+            btn.className = "addBtn";
+            btnBox.append(btn);
+            overlayBox.append(btnBox);
+
+            mainBox.append(img, overlayBox);
+
+            // var icon = document.createElement("img");
+            // offer.src=elem.icon
+
+            var offer = document.createElement("p");
+            offer.textContent = elem.offer;
+            offer.className = "gridOffer"
+
+            var productname = document.createElement("p");
+            productname.textContent = elem.productname;
+            productname.className = "gridProductname"
+
+            var productdiscription = document.createElement("p");
+            productdiscription.textContent = elem.productdiscription;
+            productdiscription.className = "gridProductDis"
+
+            var price = document.createElement("p");
+            price.textContent = elem.price;
+            price.className = "gridPrice"
+
+            var additionaloffer = document.createElement("p");
+            additionaloffer.textContent = elem.additionaloffer;
+            additionaloffer.className = "gridAddOffer"
+
+            box1.append(mainBox, offer, productname, productdiscription, price, additionaloffer);
+            document.querySelector(".just-datashampooconditioner-outer").append(box1);
+        });
+    </script>
 </body>
+
 </html>
